@@ -36,7 +36,8 @@ COMPETITOR_NAMES = [
     "shibley",
     "woodbury",
     "long island sports hub", "li sports hub",  # specific enough — no qualifier needed
-    "camps r us",                                # specific enough — no qualifier needed
+    "sports hub long island", "the hub syosset", "sports hub",  # variants of LI Sports Hub
+    "camps r us", "camp r us", "campsrus", "camprus", "camps rus", "camp rus",  # misspellings
     "camp w day camp",                           # full phrase — no qualifier needed
 ]
 
