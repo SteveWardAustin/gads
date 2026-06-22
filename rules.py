@@ -18,12 +18,40 @@ NEAR_BRAND_REVIEW = [
     "rising stars summer camp", "rising stars camp",
 ]
 
+# Camp-related qualifier words — a competitor name must appear alongside one of these
+CAMP_QUALIFIERS = [
+    "camp", "camps", "summer", "day camp", "summer camp", "summer camps",
+    "day camps", "program", "programs", "academy",
+]
+
+# Competitor name tokens — must appear WITH a camp qualifier to be a valid match
+COMPETITOR_NAMES = [
+    "buckley", "buckleycamp",
+    "driftwood",
+    "hofstra",
+    "kenwal",
+    "luhi",
+    "oasis",
+    "pierce",
+    "shibley",
+    "woodbury",
+    "long island sports hub", "li sports hub",  # specific enough — no qualifier needed
+    "camps r us",                                # specific enough — no qualifier needed
+    "camp w day camp",                           # full phrase — no qualifier needed
+]
+
+# Fallback exact-match list for short/ambiguous names needing full phrase
+COMPETITORS_EXACT = [
+    "camp w",
+]
+
+# Legacy list kept for nonbranded campaign checks (full phrases only)
 COMPETITORS = [
     "long island sports hub", "li sports hub",
     "hofstra camp", "hofstra summer camp", "hofstra summer camps",
     "oasis summer camp", "oasis day camp", "oasis camp",
     "driftwood camp", "driftwood day camp",
-    "camp w day camp",           # "camp w" alone too short — use full phrase
+    "camp w day camp",
     "shibley summer camp", "shibley day camp",
     "kenwal day camp", "kenwal camp",
     "pierce day camp", "pierce summer camp",
@@ -31,11 +59,6 @@ COMPETITORS = [
     "camps r us", "camps r us long island",
     "buckley camp", "buckleycamp", "buckleycamp.com",
     "woodbury summer camp", "woodbury day camp",
-]
-
-# Exact-match competitors (whole word / phrase boundaries required)
-COMPETITORS_EXACT = [
-    "camp w",   # too short for substring — match as standalone phrase
 ]
 
 # Known false positives — terms that contain bad-intent words but are actually OK

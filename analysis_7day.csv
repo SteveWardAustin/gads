@@ -1,4 +1,5 @@
 Search term,Campaign,Ad group,Match type,Added/Excluded,Clicks,Impr.,Cost,Conversions,RECOMMENDATION,REASON
+the hub syosset,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,No competitor signal — not relevant for competitors campaign
 driftwood camp long island,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'driftwood camp'
 buckley camp roslyn,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'buckley camp'
 what size soccer ball for 3 year old,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'what size'
@@ -23,6 +24,7 @@ sleepaway summer camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2
 baseball tips for little league,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'tips for'
 kid soccer ball sizes,CM - pMax - Portland (MxConv), --,Performance Max,None,1,2,1.57,0.00,ADD NEGATIVE,Wrong intent signal: 'ball size'
 driftwood day camp cost,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'driftwood day camp'
+sports hub long island,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,No competitor signal — not relevant for competitors campaign
 soccer drills for 12 year olds,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'drills'
 what size soccer ball for 6 year old,CM - pMax - Portland (MxConv), --,Performance Max,None,0,4,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'what size'
 how to sail an optimist,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'how to'
@@ -32,8 +34,10 @@ what size ball for 12 year old,CM - pMax - Portland (MxConv), --,Performance Max
 driftwood day camp prices,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,1,1,2.97,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'driftwood day camp'
 what size tennis racket for 10 year old,CM - pMax - Portland (MxConv), --,Performance Max,None,1,2,2.82,0.00,ADD NEGATIVE,Wrong intent signal: 'what size'
 pierce day camp prices,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'pierce day camp'
+camp r us,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,15,0.00,0.00,ADD NEGATIVE,No competitor signal — not relevant for competitors campaign
 sleepaway camp packing,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'sleepaway'
 acting classes for kids nyc,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,ADD NEGATIVE,NY/LI geography in Portland campaign: ' ny'
+campsrus,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,24,0.00,0.00,ADD NEGATIVE,No competitor signal — not relevant for competitors campaign
 long island university football camps,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,NY/LI geography in Portland campaign: 'long island'
 what size ball for 10 year old,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'what size'
 good hitting drills for youth baseball,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'drills'
@@ -42,7 +46,9 @@ fscamp,CM - Nonbranded - Geo Priorities (MxCx),Sports Camps,Phrase match (close 
 how to play golf for beginners,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'how to'
 camps r us long island,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'camps r us'
 what size soccer ball for 8 year old,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'what size'
+camp r us near me,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,3,0.00,0.00,ADD NEGATIVE,No competitor signal — not relevant for competitors campaign
 camps r us hicksville calendar,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'camps r us'
+camps rus,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,No competitor signal — not relevant for competitors campaign
 camps r us locations,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,5,0.00,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'camps r us'
 tennis footwork drills,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'drills'
 what size tennis racquet for a 6 year old,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'what size'
@@ -76,38 +82,9 @@ u12 soccer ball size,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,
 what size soccer ball for kids,CM - pMax - Portland (MxConv), --,Performance Max,None,1,2,0.52,0.00,ADD NEGATIVE,Wrong intent signal: 'what size'
 garden city baseball camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,NY/LI geography in Portland campaign: 'garden city'
 kenwal day camp schedule,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'kenwal day camp'
+camprus,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,14,0.00,0.00,ADD NEGATIVE,No competitor signal — not relevant for competitors campaign
 what size soccer ball for middle school,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'what size'
-the hub syosset,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,1,0.00,0.00,REVIEW,No competitor match — verify if intentional
-hofstra university summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,3,13,14.23,0.00,REVIEW,No competitor match — verify if intentional
-pierce camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,2,38,7.66,0.00,REVIEW,No competitor match — verify if intentional
-hofstra youth summer programs,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,REVIEW,No competitor match — verify if intentional
-summer camp hofstra,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,REVIEW,No competitor match — verify if intentional
-driftwood summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,1,8,4.01,0.00,REVIEW,No competitor match — verify if intentional
-sports hub long island,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,1,0.00,0.00,REVIEW,No competitor match — verify if intentional
-camp pierce,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,8,0.00,0.00,REVIEW,No competitor match — verify if intentional
-buckley country day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,10,0.00,0.00,REVIEW,No competitor match — verify if intentional
-camp r us,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,15,0.00,0.00,REVIEW,No competitor match — verify if intentional
-luhi summer programs,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,3,17,11.60,0.00,REVIEW,No competitor match — verify if intentional
-camp buckley,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,7,0.00,0.00,REVIEW,No competitor match — verify if intentional
-campsrus,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,24,0.00,0.00,REVIEW,No competitor match — verify if intentional
-pierce country day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,5,64,20.80,0.00,REVIEW,No competitor match — verify if intentional
-shibley camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,8,0.00,0.00,REVIEW,No competitor match — verify if intentional
-camp r us near me,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,3,0.00,0.00,REVIEW,No competitor match — verify if intentional
-hofstra university summer camps,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,2,8,7.44,0.00,REVIEW,No competitor match — verify if intentional
-camps rus,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,1,0.00,0.00,REVIEW,No competitor match — verify if intentional
-buckley summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,6,0.00,0.00,REVIEW,No competitor match — verify if intentional
-hofstra edu camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,REVIEW,No competitor match — verify if intentional
-buckley day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,7,55,29.90,0.00,REVIEW,No competitor match — verify if intentional
-luhi day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,1,5,4.18,0.00,REVIEW,No competitor match — verify if intentional
-camp kenwal,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,1,6,4.70,0.00,REVIEW,No competitor match — verify if intentional
-pierce camps,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,REVIEW,No competitor match — verify if intentional
-pierce country day camp roslyn,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,REVIEW,No competitor match — verify if intentional
-pierce camp roslyn,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,1,17,4.69,0.00,REVIEW,No competitor match — verify if intentional
-hofstra kids camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,REVIEW,No competitor match — verify if intentional
-camp luhi,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,1,0.00,0.00,REVIEW,No competitor match — verify if intentional
-summer camp pierce,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,REVIEW,No competitor match — verify if intentional
-camprus,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,14,0.00,0.00,REVIEW,No competitor match — verify if intentional
-camp rus,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,REVIEW,No competitor match — verify if intentional
+camp rus,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,No competitor signal — not relevant for competitors campaign
 mamaroneck recreation,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
 future stars summer camps,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Exact match (close variant),None,16,44,20.32,0.00,OK,Brand term matched: 'future stars'
 mineola summer camps,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
@@ -129,7 +106,7 @@ summer camp westchester ny,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Br
 little league camp,CM - Nonbranded - Other Geos (MxConv),Baseball Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 riverside sports camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
 rec camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
-oasis day camp near me,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,3,0.00,0.00,OK,Competitor matched: 'oasis day camp'
+oasis day camp near me,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,3,0.00,0.00,OK,Competitor matched: 'oasis'
 camp future stars,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Exact match (close variant),None,2,4,6.26,0.00,OK,Brand term matched: 'future stars'
 st joseph's future stars camp,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,2,4,7.14,1.70,OK,Brand term matched: 'future stars'
 future stars summer camp old westbury,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,3,6,2.92,0.00,OK,Brand term matched: 'future stars'
@@ -155,7 +132,8 @@ summer basketball for kids near me,CM - Nonbranded - Geo Priorities (MxCx),Baske
 sports camps on long island,CM - Nonbranded - Geo Priorities (MxCx),Sports Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 camps by me,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Exact match (close variant),None,0,2,0.00,0.00,OK,Appears relevant
 coop camp mamaroneck,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,2,0.00,0.00,OK,Appears relevant
-hofstra summer camps,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,7,0.00,0.00,OK,Competitor matched: 'hofstra summer camp'
+hofstra summer camps,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,7,0.00,0.00,OK,Competitor matched: 'hofstra'
+hofstra university summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,3,13,14.23,0.00,OK,Competitor matched: 'hofstra'
 future stars soccer camp,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,3,5,1.32,0.78,OK,Brand term matched: 'future stars'
 future stars cerca de mi,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,1,2,0.08,0.00,OK,Brand term matched: 'future stars'
 3d printing summer camp for kids,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,2,0.00,0.00,OK,Appears relevant
@@ -189,7 +167,7 @@ apex tennis camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00
 basketball camp near me,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 sport time near me,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,2,0.00,0.00,OK,Appears relevant
 football camp,CM - Nonbranded - Other Geos (MxConv),Football Camps,Exact match,Added,0,3,0.00,0.00,OK,Appears relevant
-hofstra camps,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,2,11,8.57,0.00,OK,Competitor matched: 'hofstra camp'
+hofstra camps,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,2,11,8.57,0.00,OK,Competitor matched: 'hofstra'
 tarrytown summer camp 2026,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,1,1,2.85,0.00,OK,Appears relevant
 new hyde park summer camps,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 dance camp near me,CM - Nonbranded - Geo Priorities (MxCx),Dance Camps,Exact match (close variant),None,1,8,2.79,0.00,OK,Appears relevant
@@ -225,7 +203,7 @@ summer youth sports camps near me,CM - pMax - Portland (MxConv), --,Performance 
 hockey camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 interclub tennis long island,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,5,0.00,0.00,OK,Appears relevant
 colby baseball camps,CM - Nonbranded - Other Geos (MxConv),Baseball Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
-kenwal camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,1,0.00,0.00,OK,Competitor matched: 'kenwal camp'
+kenwal camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,1,0.00,0.00,OK,Competitor matched: 'kenwal'
 future stars tennis,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,9,16,20.16,0.00,OK,Brand term matched: 'future stars'
 summer camps smithtown ny,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 baseball camps for 5 year olds near me,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,1,2,2.69,0.00,OK,Appears relevant
@@ -326,7 +304,7 @@ bates baseball camp,CM - Nonbranded - Other Geos (MxConv),Baseball Camps,Phrase 
 sports camps summer 2026,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,2,0.00,0.00,OK,Appears relevant
 patriots football camp for kids,CM - Nonbranded - Other Geos (MxConv),Football Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
 greenwich basketball camp,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
-luhi camps,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,4,0.00,0.00,OK,Competitor matched: 'luhi camp'
+luhi camps,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,4,0.00,0.00,OK,Competitor matched: 'luhi'
 future stars lacrosse camp,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,1,3,0.88,0.00,OK,Brand term matched: 'future stars'
 summer camps by me,CM - Nonbranded - Geo Priorities (MxCx),Soccer Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 summer camps for pre teens near me,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
@@ -344,6 +322,7 @@ campus camps blue point,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phr
 camp arcadia maine,CM - pMax - Portland (MxConv), --,Performance Max,None,0,3,0.00,0.00,OK,Appears relevant for Portland market
 westchester summer camps,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
 icamp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,2,0.00,0.00,OK,Appears relevant
+pierce camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,2,38,7.66,0.00,OK,Competitor matched: 'pierce'
 future stars adventure camp,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Exact match (close variant),None,0,5,0.00,0.00,OK,Brand term matched: 'future stars'
 best summer camps in new york,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
 summer lacrosse camps long island,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,17,0.00,0.00,OK,Appears relevant
@@ -441,7 +420,7 @@ is size 5 standard soccer ball,CM - pMax - Portland (MxConv), --,Performance Max
 southampton camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,1,3,33.07,0.00,OK,Appears relevant
 mineola summer camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
 football camps,CM - Nonbranded - Other Geos (MxConv),Football Camps,Exact match,Added,0,1,0.00,0.00,OK,Appears relevant
-driftwood camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,1,17,4.57,0.00,OK,Competitor matched: 'driftwood camp'
+driftwood camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,1,17,4.57,0.00,OK,Competitor matched: 'driftwood'
 long island day camps,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Exact match (close variant),None,0,4,0.00,0.00,OK,Appears relevant
 herricks summer camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,1,1,2.57,0.00,OK,Appears relevant
 peconic bay camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
@@ -508,7 +487,7 @@ sport summer camps near me,CM - pMax - Portland (MxConv), --,Performance Max,Non
 basketball specific exercises,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,OK,Appears relevant for Portland market
 maine basketball camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 indoor pitching practice,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
-oasis summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),Added,0,1,0.00,0.00,OK,Competitor matched: 'oasis summer camp'
+oasis summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),Added,0,1,0.00,0.00,OK,Competitor matched: 'oasis'
 high school camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,5,0.00,0.00,OK,Appears relevant
 science summer camp near me,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
 soccer summer camp 2026,CM - Nonbranded - Geo Priorities (MxCx),Soccer Camps,Phrase match,None,1,7,2.76,0.00,OK,Appears relevant
@@ -679,6 +658,7 @@ art summer camp for teens near me,CM - pMax - Portland (MxConv), --,Performance 
 camp june 23,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,2,0.00,0.00,OK,Appears relevant
 kids gym westchester,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
 donovan mitchell camp,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match (close variant),None,0,4,0.00,0.00,OK,Appears relevant
+hofstra youth summer programs,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,OK,Competitor matched: 'hofstra'
 d2 football camps,CM - Nonbranded - Geo Priorities (MxCx),Football Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
 notre dame youth football camp 2026,CM - Nonbranded - Geo Priorities (MxCx),Football Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
 t ball camps near me,CM - Nonbranded - Geo Priorities (MxCx),Sports Camps,Phrase match (close variant),None,1,3,2.75,0.00,OK,Appears relevant
@@ -777,6 +757,8 @@ points of sail,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0
 cheverus summer camp 2026,CM - pMax - Portland (MxConv), --,Performance Max,None,0,3,0.00,0.00,OK,Appears relevant for Portland market
 harvard softball camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 camps r us,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,2,78,8.05,0.00,OK,Competitor matched: 'camps r us'
+summer camp hofstra,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,OK,Competitor matched: 'hofstra'
+driftwood summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,1,8,4.01,0.00,OK,Competitor matched: 'driftwood'
 future stars camp old westbury,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,3,7,5.47,0.00,OK,Brand term matched: 'future stars'
 future stars near me,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,1,3,3.01,0.00,OK,Brand term matched: 'future stars'
 usa gymnastics camp,CM - Nonbranded - Geo Priorities (MxCx),Sports Camps,Phrase match (close variant),None,0,2,0.00,0.00,OK,Appears relevant
@@ -824,7 +806,7 @@ lightning baseball camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0
 tennis clubs westchester,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,2,0.00,0.00,OK,Appears relevant
 westchester summer camps 2026,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,4,0.00,0.00,OK,Appears relevant
 tennis camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Exact match,Added,2,9,17.69,0.00,OK,Appears relevant
-kenwal day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,6,41,26.83,0.00,OK,Competitor matched: 'kenwal day camp'
+kenwal day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,6,41,26.83,0.00,OK,Competitor matched: 'kenwal'
 camp for the summer,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Exact match (close variant),None,0,2,0.00,0.00,OK,Appears relevant
 summer programs for kids,CM - Nonbranded - Geo Priorities (MxCx),Soccer Camps,Phrase match (close variant),None,1,7,2.98,0.00,OK,Appears relevant
 ninja warrior camp,CM - Nonbranded - Geo Priorities (MxCx),Sports Camps,Phrase match (close variant),None,0,5,0.00,0.00,OK,Appears relevant
@@ -892,7 +874,7 @@ august summer camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase m
 wantagh park summer camp,CM - Nonbranded - Geo Priorities (MxCx),Soccer Camps,Phrase match (close variant),None,0,4,0.00,0.00,OK,Appears relevant
 eybl summer camp,CM - Nonbranded - Geo Priorities (MxCx),Basketball Camp,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 summer camp portland maine,CM - pMax - Portland (MxConv), --,Performance Max,None,1,5,2.27,0.00,OK,Appears relevant for Portland market
-luhi summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,16,196,69.40,0.00,OK,Competitor matched: 'luhi summer camp'
+luhi summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,16,196,69.40,0.00,OK,Competitor matched: 'luhi'
 farmingdale college summer camp,CM - Nonbranded - Geo Priorities (MxCx),Sports Camps,Phrase match (close variant),None,1,1,2.87,0.00,OK,Appears relevant
 half day summer camps near me,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,1,4,2.80,0.00,OK,Appears relevant
 camp wilbur herrlich,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
@@ -1060,8 +1042,9 @@ ballet camps summer 2026,CM - Nonbranded - Other Geos (MxConv),Dance Camps,Phras
 basketball camp long island,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match,None,0,2,0.00,0.00,OK,Appears relevant
 baseball camps westchester ny,CM - Nonbranded - Other Geos (MxConv),Baseball Camps,Phrase match (close variant),None,0,4,0.00,0.00,OK,Appears relevant
 berkeley lacrosse camp,CM - Nonbranded - Other Geos (MxConv),Lacrosse Camps,Phrase match (close variant),None,0,2,0.00,0.00,OK,Appears relevant
-oasis day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),Added,0,6,0.00,0.00,OK,Competitor matched: 'oasis day camp'
-luhi summer camps,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,1,0.00,0.00,OK,Competitor matched: 'luhi summer camp'
+camp pierce,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,8,0.00,0.00,OK,Competitor matched: 'pierce'
+oasis day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),Added,0,6,0.00,0.00,OK,Competitor matched: 'oasis'
+luhi summer camps,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,1,0.00,0.00,OK,Competitor matched: 'luhi'
 rye racquet summer camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
 freeport recreation summer camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
 dance summer camp,CM - Nonbranded - Geo Priorities (MxCx),Dance Camps,Exact match (close variant),None,0,2,0.00,0.00,OK,Appears relevant
@@ -1101,6 +1084,7 @@ camp for 2 year olds,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase
 tennis camp hamptons,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Phrase match,None,0,3,0.00,0.00,OK,Appears relevant
 baseball camp near me,CM - Nonbranded - Other Geos (MxConv),Baseball Camps,Exact match (close variant),None,0,6,0.00,0.00,OK,Appears relevant
 donovan mitchell basketball camp,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match,None,1,3,4.60,0.00,OK,Appears relevant
+buckley country day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,10,0.00,0.00,OK,Competitor matched: 'buckley'
 camp lunch ideas,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,OK,Appears relevant for Portland market
 field hockey for beginners,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 volleyball camps summer 2026,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,OK,Appears relevant for Portland market
@@ -1180,6 +1164,7 @@ summer camp lacrosse near me,CM - Nonbranded - Geo Priorities (MxCx),Lacrosse Ca
 club fit camp,CM - Nonbranded - Geo Priorities (MxCx),Sports Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 sua sponte camp,CM - Nonbranded - Other Geos (MxConv),Lacrosse Camps,Phrase match (close variant),None,0,3,0.00,0.00,OK,Appears relevant
 westchester summer day camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,2,0.00,0.00,OK,Appears relevant
+luhi summer programs,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,3,17,11.60,0.00,OK,Competitor matched: 'luhi'
 future stars patchogue,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,6,14,0.34,1.00,OK,Brand term matched: 'future stars'
 wildcats summer camp,CM - Nonbranded - Geo Priorities (MxCx),Sports Camps,Phrase match (close variant),None,0,7,0.00,0.00,OK,Appears relevant
 riverhead summer camps,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,2,0.00,0.00,OK,Appears relevant
@@ -1203,6 +1188,7 @@ basketball camps,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00
 summer hockey camps maine,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 alfond youth center summer camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 steady buckets,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
+camp buckley,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,7,0.00,0.00,OK,Competitor matched: 'buckley'
 auburn maine summer camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 soccer summer camp scarborough,CM - pMax - Portland (MxConv), --,Performance Max,None,1,2,3.86,0.00,OK,Appears relevant for Portland market
 non contact team sports,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
@@ -1259,7 +1245,7 @@ mam summer camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase matc
 summer camps elmont ny,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
 bdc summer camp,CM - Nonbranded - Other Geos (MxConv),Dance Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 camp in long island,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,2,0.00,0.00,OK,Appears relevant
-hofstra summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,5,58,19.63,0.00,OK,Competitor matched: 'hofstra summer camp'
+hofstra summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,5,58,19.63,0.00,OK,Competitor matched: 'hofstra'
 camp w,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,2,0.00,0.00,OK,Competitor matched: 'camp w'
 soccer camp maine,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,OK,Appears relevant for Portland market
 basketball camps maine,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
@@ -1282,6 +1268,7 @@ broad channel day camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phra
 day camp for 4 year olds near me,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,2,3,5.64,0.00,OK,Appears relevant
 syag volleyball,CM - Nonbranded - Geo Priorities (MxCx),Volleyball Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 summer lacrosse,CM - Nonbranded - Geo Priorities (MxCx),Lacrosse Camps,Exact match (close variant),None,0,7,0.00,0.00,OK,Appears relevant
+pierce country day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,5,64,20.80,0.00,OK,Competitor matched: 'pierce'
 new hampshire lacrosse camps,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,OK,Appears relevant for Portland market
 usm sports camps,CM - pMax - Portland (MxConv), --,Performance Max,None,0,3,0.00,0.00,OK,Appears relevant for Portland market
 hunter summer camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,1,2,2.55,0.00,OK,Appears relevant
@@ -1307,7 +1294,7 @@ soccer camps in long island,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps
 tennis summer camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Exact match,Added,0,6,0.00,0.00,OK,Appears relevant
 kat basketball camp,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
 camp condor white plains,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
-pierce day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,6,92,26.98,0.00,OK,Competitor matched: 'pierce day camp'
+pierce day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,6,92,26.98,0.00,OK,Competitor matched: 'pierce'
 lacrosse camps 2026,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 basketball camp maine,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,OK,Appears relevant for Portland market
 football training camps for kids,CM - Nonbranded - Geo Priorities (MxCx),Football Camps,Exact match (close variant),None,0,11,0.00,0.00,OK,Appears relevant
@@ -1331,6 +1318,7 @@ weekend summer camp,CM - Nonbranded - Geo Priorities (MxCx),Soccer Camps,Phrase 
 tennis camp ny,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
 91 camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,2,0.00,0.00,OK,Appears relevant
 flag football clinics near me,CM - Nonbranded - Other Geos (MxConv),Football Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
+shibley camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,8,0.00,0.00,OK,Competitor matched: 'shibley'
 summer soccer com,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 pickup basketball,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 farm camp maine,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
@@ -1354,7 +1342,7 @@ long island football camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,P
 basketball camp near me for kids,CM - Nonbranded - Geo Priorities (MxCx),Basketball Camp,Exact match (close variant),None,0,4,0.00,0.00,OK,Appears relevant
 lacrosse summer camp near me,CM - Nonbranded - Other Geos (MxConv),Lacrosse Camps,Exact match (close variant),None,1,3,5.58,0.00,OK,Appears relevant
 girls and boys camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
-pierce summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,2,29,9.00,0.00,OK,Competitor matched: 'pierce summer camp'
+pierce summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,2,29,9.00,0.00,OK,Competitor matched: 'pierce'
 soccer camp near me,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 hoop camp maine,CM - pMax - Portland (MxConv), --,Performance Max,None,0,3,0.00,0.00,OK,Appears relevant for Portland market
 softball camps,CM - Nonbranded - Geo Priorities (MxCx),Softball Camps,Exact match,Added,0,3,0.00,0.00,OK,Appears relevant
@@ -1406,7 +1394,7 @@ summer camp brentwood ny,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Ph
 camps in august near me,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,2,0.00,0.00,OK,Appears relevant
 kid strong,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
 bba basketball camp,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
-oasis camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,1,4,5.27,0.00,OK,Competitor matched: 'oasis camp'
+oasis camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,1,4,5.27,0.00,OK,Competitor matched: 'oasis'
 camp w day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,2,11,8.95,0.00,OK,Competitor matched: 'camp w day camp'
 friends school camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,OK,Appears relevant for Portland market
 future stars swim camp,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,1,1,0.01,0.00,OK,Brand term matched: 'future stars'
@@ -1502,7 +1490,7 @@ summer camp merrick ny,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phra
 levittown summer camps,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,2,0.00,0.00,OK,Appears relevant
 southampton basketball camp,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match,None,1,1,0.90,0.00,OK,Appears relevant
 summer camps,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,8,0.00,0.00,OK,Appears relevant
-shibley day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,2,84,8.19,0.00,OK,Competitor matched: 'shibley day camp'
+shibley day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,2,84,8.19,0.00,OK,Competitor matched: 'shibley'
 summercamp near me,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 future stars summer camp,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Exact match (close variant),Added,65,137,98.08,2.50,OK,Brand term matched: 'future stars'
 summer camps all day,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,2,0.00,0.00,OK,Appears relevant
@@ -1715,6 +1703,7 @@ summer camp long island,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phr
 day camps for 4 year olds,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 club scikidz central long island,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,3,0.00,0.00,OK,Appears relevant
 bjj summer camp,CM - Nonbranded - Geo Priorities (MxCx),Sports Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
+hofstra university summer camps,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,2,8,7.44,0.00,OK,Competitor matched: 'hofstra'
 karl towns camp,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match (close variant),None,0,2,0.00,0.00,OK,Appears relevant
 future star camp,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Exact match (close variant),Added,0,1,0.00,0.00,OK,Brand term matched: 'future star'
 summer camp portland,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
@@ -1845,7 +1834,7 @@ gymnastic camps summer 2026,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps
 camp huntington high falls ny,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,2,0.00,0.00,OK,Appears relevant
 lacrosse camps long island,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,16,0.00,0.00,OK,Appears relevant
 fastbreak summer camp,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
-shibley summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,2,0.00,0.00,OK,Competitor matched: 'shibley summer camp'
+shibley summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,2,0.00,0.00,OK,Competitor matched: 'shibley'
 future stars,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Exact match,Added,90,237,117.69,5.57,OK,Brand term matched: 'future stars'
 chess camp near me,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 y camp of maine,CM - pMax - Portland (MxConv), --,Performance Max,None,0,3,0.00,0.00,OK,Appears relevant for Portland market
@@ -2078,6 +2067,7 @@ future stars camp near me,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Exact
 toddler size soccer ball,CM - pMax - Portland (MxConv), --,Performance Max,None,1,4,0.80,0.00,OK,Appears relevant for Portland market
 drake maye football camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 summer programs for kids near me,CM - pMax - Portland (MxConv), --,Performance Max,None,1,2,0.81,0.00,OK,Appears relevant for Portland market
+buckley summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,6,0.00,0.00,OK,Competitor matched: 'buckley'
 east islip summer camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,4,0.00,0.00,OK,Appears relevant
 great neck summer camp 2026,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,4,0.00,0.00,OK,Appears relevant
 horseback riding camp near me,CM - Nonbranded - Geo Priorities (MxCx),Horseback Riding,Exact match (close variant),None,1,12,1.23,0.00,OK,Appears relevant
@@ -2119,6 +2109,7 @@ aic football camp,CM - Nonbranded - Geo Priorities (MxCx),Football Camps,Phrase 
 create and explore summer camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
 town of huntington summer camp,CM - Nonbranded - Geo Priorities (MxCx),Soccer Camps,Phrase match (close variant),None,0,3,0.00,0.00,OK,Appears relevant
 waynflete summer camp 2026,CM - pMax - Portland (MxConv), --,Performance Max,None,1,3,2.70,0.00,OK,Appears relevant for Portland market
+hofstra edu camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,OK,Competitor matched: 'hofstra'
 white plains basketball camp,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match,None,1,2,3.09,0.00,OK,Appears relevant
 crestwood country day camp and school melville,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,5,0.00,0.00,OK,Appears relevant
 west islip football camp,CM - Nonbranded - Geo Priorities (MxCx),Football Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
@@ -2206,7 +2197,7 @@ future stars volleyball camp,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Ph
 future stars patchogue,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match (close variant),None,7,9,1.12,0.00,OK,Brand term matched: 'future stars'
 maine soccer camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 volleyball camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
-driftwood day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,11,197,46.81,0.00,OK,Competitor matched: 'driftwood day camp'
+driftwood day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,11,197,46.81,0.00,OK,Competitor matched: 'driftwood'
 suny purchase camps,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,2,1,34.72,0.00,OK,Appears relevant
 summer camp for teens,CM - Nonbranded - Geo Priorities (MxCx),Soccer Camps,Exact match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 camps on long island,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Exact match (close variant),None,1,20,2.84,0.00,OK,Appears relevant
@@ -2281,6 +2272,7 @@ ny summer camp carle place,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,
 camp basketball near me,CM - Nonbranded - Geo Priorities (MxCx),Basketball Camp,Exact match (close variant),None,0,5,0.00,0.00,OK,Appears relevant
 lacrosse summer camps long island,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,2,0.00,0.00,OK,Appears relevant
 portland maine summer camps,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,OK,Appears relevant for Portland market
+buckley day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,7,55,29.90,0.00,OK,Competitor matched: 'buckley'
 cheverus basketball camp,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match,None,1,4,5.68,0.00,OK,Appears relevant
 swimming camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,5,0.00,0.00,OK,Appears relevant
 kids summer camp near me near me,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Exact match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
@@ -2303,7 +2295,8 @@ tennis camp maine,CM - pMax - Portland (MxConv), --,Performance Max,None,1,4,2.3
 summer day camps,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 things to do when raining near me,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 swimming camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
-hofstra camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,14,0.00,0.00,OK,Competitor matched: 'hofstra camp'
+luhi day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,1,5,4.18,0.00,OK,Competitor matched: 'luhi'
+hofstra camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,14,0.00,0.00,OK,Competitor matched: 'hofstra'
 suffolk county camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
 camp long island,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Exact match (close variant),None,0,10,0.00,0.00,OK,Appears relevant
 islip town summer camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,2,0.00,0.00,OK,Appears relevant
@@ -2326,6 +2319,7 @@ malverne summer rec,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase 
 cheer camps near me,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,2,3,5.26,0.45,OK,Appears relevant
 future stars softball camp,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,2,3,4.19,0.53,OK,Brand term matched: 'future stars'
 kingsley pines,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
+camp kenwal,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,1,6,4.70,0.00,OK,Competitor matched: 'kenwal'
 night tennis,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
 myway45,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 soccer camp nassau county,CM - Nonbranded - Geo Priorities (MxCx),Soccer Camps,Phrase match,None,0,3,0.00,0.00,OK,Appears relevant
@@ -2448,7 +2442,7 @@ big chief school and camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,P
 future stars golf camp,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,0,1,0.00,0.00,OK,Brand term matched: 'future stars'
 future stars tennis camp east hampton,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,1,1,0.93,0.00,OK,Brand term matched: 'future stars'
 swimming summer camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
-buckley camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,6,0.00,0.00,OK,Competitor matched: 'buckley camp'
+buckley camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,6,0.00,0.00,OK,Competitor matched: 'buckley'
 summer theatre camps near me,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,4,0.00,0.00,OK,Appears relevant
 spartans basketball camp,CM - Nonbranded - Geo Priorities (MxCx),Basketball Camp,Phrase match,None,0,3,0.00,0.00,OK,Appears relevant
 pierce summer day camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
@@ -2473,6 +2467,7 @@ long island summer baseball camps,CM - Nonbranded - Geo Priorities (MxCx),Summer
 basketball camps near me,CM - pMax - Portland (MxConv), --,Performance Max,None,1,3,1.74,0.00,OK,Appears relevant for Portland market
 summer volleyball clinics,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 cooper and ace flagg basketball camp,CM - pMax - Portland (MxConv), --,Performance Max,None,1,2,3.19,0.00,OK,Appears relevant for Portland market
+pierce camps,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,OK,Competitor matched: 'pierce'
 college softball camps near me 2026,CM - Nonbranded - Other Geos (MxConv),Softball Camps,Phrase match,None,0,2,0.00,0.00,OK,Appears relevant
 rye tennis,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
 tennis clubs southampton,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
@@ -2543,7 +2538,7 @@ day camp near me,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Exact matc
 3d prints,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 stars freeport maine,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 softball summer camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
-luhi camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,2,28,8.97,0.00,OK,Competitor matched: 'luhi camp'
+luhi camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,2,28,8.97,0.00,OK,Competitor matched: 'luhi'
 tia tennis white plains,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
 southampton tennis camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Phrase match,None,0,2,0.00,0.00,OK,Appears relevant
 camps in westchester,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,6,0.00,0.00,OK,Appears relevant
@@ -2653,7 +2648,7 @@ summer camp for kids,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad ma
 tennis courta near me,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,2,0.00,0.00,OK,Appears relevant
 basketball camp for kids,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Exact match (close variant),None,0,2,0.00,0.00,OK,Appears relevant
 camp forest hills,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
-oasis summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,2,0.00,0.00,OK,Competitor matched: 'oasis summer camp'
+oasis summer camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,0,2,0.00,0.00,OK,Competitor matched: 'oasis'
 ninja summer camp,CM - Nonbranded - Geo Priorities (MxCx),Sports Camps,Phrase match (close variant),None,0,3,0.00,0.00,OK,Appears relevant
 st patrick's basketball camp,CM - Nonbranded - Geo Priorities (MxCx),Basketball Camp,Phrase match,None,0,2,0.00,0.00,OK,Appears relevant
 lavner education summer camp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
@@ -2755,7 +2750,8 @@ summer sports for teens near me,CM - pMax - Portland (MxConv), --,Performance Ma
 une basketball camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,6,0.00,0.00,OK,Appears relevant for Portland market
 sua sponte lacrosse camp,CM - pMax - Portland (MxConv), --,Performance Max,None,0,3,0.00,0.00,OK,Appears relevant for Portland market
 paddle tennis,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
-oasis day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,1,32,5.31,0.00,OK,Competitor matched: 'oasis day camp'
+oasis day camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match,Added,1,32,5.31,0.00,OK,Competitor matched: 'oasis'
+pierce country day camp roslyn,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,OK,Competitor matched: 'pierce'
 summer camp hicksville,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 wesleyan red and black camp,CM - Nonbranded - Geo Priorities (MxCx),Football Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 summer camps for 10 year olds,CM - Nonbranded - Geo Priorities (MxCx),Soccer Camps,Phrase match (close variant),None,0,4,0.00,0.00,OK,Appears relevant
@@ -2770,6 +2766,7 @@ tyler kolek basketball camp,CM - Nonbranded - Geo Priorities (MxCx),Basketball C
 ymca summer camp maine,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,OK,Appears relevant for Portland market
 cheerleaders,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 sailing terms,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
+pierce camp roslyn,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,1,17,4.69,0.00,OK,Competitor matched: 'pierce'
 8th grade summer camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,1,0.00,0.00,OK,Appears relevant
 summer camp westchester,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,1,5,7.26,0.00,OK,Appears relevant
 red storm volleyball camp,CM - Nonbranded - Geo Priorities (MxCx),Volleyball Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
@@ -2845,6 +2842,7 @@ riverhead summer camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad m
 scarsdale summer camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,2,0.00,0.00,OK,Appears relevant
 jaxson dart football camp,CM - Nonbranded - Other Geos (MxConv),Football Camps,Phrase match,None,0,7,0.00,0.00,OK,Appears relevant
 dance camp near me,CM - Nonbranded - Other Geos (MxConv),Dance Camps,Exact match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
+hofstra kids camp,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,OK,Competitor matched: 'hofstra'
 tiger football camp,CM - Nonbranded - Geo Priorities (MxCx),Football Camps,Phrase match,None,0,2,0.00,0.00,OK,Appears relevant
 suffolk summer camps 2026,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,2,0.00,0.00,OK,Appears relevant
 high school summer science programs,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
@@ -2870,6 +2868,8 @@ usm summer camps,CM - pMax - Portland (MxConv), --,Performance Max,None,0,6,0.00
 lacrosse goalie clinics near me,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,OK,Appears relevant for Portland market
 football camp for teens near me,CM - Nonbranded - Other Geos (MxConv),Football Camps,Exact match (close variant),None,0,2,0.00,0.00,OK,Appears relevant
 basketball day camps new york,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match,None,0,3,0.00,0.00,OK,Appears relevant
+camp luhi,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,1,0.00,0.00,OK,Competitor matched: 'luhi'
+summer camp pierce,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,OK,Competitor matched: 'pierce'
 kids summer football camps near me,CM - Nonbranded - Geo Priorities (MxCx),Football Camps,Exact match (close variant),None,0,3,0.00,0.00,OK,Appears relevant
 summer camps 10 year olds,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
 hustle and heart basketball camp,CM - Nonbranded - Geo Priorities (MxCx),Basketball Camp,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant
@@ -2937,7 +2937,7 @@ maine volleyball academy,CM - pMax - Portland (MxConv), --,Performance Max,None,
 hit and run baseball camp white plains,CM - Nonbranded - Other Geos (MxConv),Baseball Camps,Phrase match (close variant),None,1,2,3.27,0.00,OK,Appears relevant
 fastbreak camp,CM - Nonbranded - Other Geos (MxConv),Tennis Camps,Broad match,None,0,2,0.00,0.00,OK,Appears relevant
 dribbl camp,CM - Nonbranded - Other Geos (MxConv),Basketball Camp,Phrase match (close variant),None,0,1,0.00,0.00,OK,Appears relevant
-pierce day camp roslyn,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,OK,Competitor matched: 'pierce day camp'
+pierce day camp roslyn,CM - Competitors - OldW - (Mx.Clicks),Competitors,Exact match (close variant),None,0,2,0.00,0.00,OK,Competitor matched: 'pierce'
 future stars camp suffolk community college,CM - Branded (Mx.Clicks),Future Stars Camp Brand,Phrase match,None,1,2,0.01,0.00,OK,Brand term matched: 'future stars'
 bowling camp for kids,CM - Nonbranded - Geo Priorities (MxCx),Sports Camps,Phrase match (close variant),None,0,2,0.00,0.00,OK,Appears relevant
 soccer camp in long island,CM - Nonbranded - Geo Priorities (MxCx),Soccer Camps,Phrase match,None,0,1,0.00,0.00,OK,Appears relevant

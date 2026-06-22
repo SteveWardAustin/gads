@@ -8,14 +8,29 @@ import sys
 import argparse
 from pathlib import Path
 import re
-from rules import (BRAND_TERMS, COMPETITORS, COMPETITORS_EXACT, BAD_INTENT_SIGNALS,
-                   BAD_INTENT_EXCEPTIONS, FALSE_BRAND_TERMS, NEAR_BRAND_REVIEW,
-                   PORTLAND_GOOD_GEO, PORTLAND_BAD_GEO)
+from rules import (BRAND_TERMS, COMPETITORS, COMPETITORS_EXACT, COMPETITOR_NAMES,
+                   CAMP_QUALIFIERS, BAD_INTENT_SIGNALS, BAD_INTENT_EXCEPTIONS,
+                   FALSE_BRAND_TERMS, NEAR_BRAND_REVIEW, PORTLAND_GOOD_GEO, PORTLAND_BAD_GEO)
 
 
 def contains_any(text, terms):
     t = text.lower()
     return next((term for term in terms if term in t), None)
+
+
+def matches_competitor_with_qualifier(text):
+    """Match competitor name + camp qualifier anywhere in the term."""
+    t = text.lower()
+    has_qualifier = any(q in t for q in CAMP_QUALIFIERS)
+    for name in COMPETITOR_NAMES:
+        if name in t:
+            # Specific enough phrases don't need a qualifier
+            if len(name.split()) >= 3 or name in ("camps r us", "buckleycamp"):
+                return name
+            # Short names need a camp qualifier alongside them
+            if has_qualifier:
+                return name
+    return None
 
 
 def contains_any_exact(text, terms):
@@ -59,11 +74,13 @@ def analyze_term(term, campaign, already_excluded):
 
     # ── COMPETITORS campaign ──────────────────────────────────────────────────
     if "competitor" in camp_lower:
-        if matched_competitor:
-            return "OK", f"Competitor matched: '{matched_competitor}'"
         if matched_brand:
             return "ADD NEGATIVE", "Own brand showing in competitor campaign"
-        return "REVIEW", "No competitor match — verify if intentional"
+        fuzzy_match = matches_competitor_with_qualifier(term_lower)
+        if fuzzy_match or matched_competitor:
+            hit = fuzzy_match or matched_competitor
+            return "OK", f"Competitor matched: '{hit}'"
+        return "ADD NEGATIVE", "No competitor signal — not relevant for competitors campaign"
 
     # ── pMax Portland ─────────────────────────────────────────────────────────
     if "pmax" in camp_lower or "portland" in camp_lower:
