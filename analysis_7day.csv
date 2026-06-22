@@ -1,4 +1,4 @@
-Search term,Campaign,Ad group,Match type,Added/Excluded,Clicks,Impr.,Cost,Conversions,RECOMMENDATION,REASON
+﻿Search term,Campaign,Ad group,Match type,Added/Excluded,Clicks,Impr.,Cost,Conversions,RECOMMENDATION,REASON
 driftwood camp long island,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'driftwood camp'
 buckley camp roslyn,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'buckley camp'
 what size soccer ball for 3 year old,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'what size'
@@ -9,7 +9,7 @@ soccer ball size for 9 year old,CM - pMax - Portland (MxConv), --,Performance Ma
 warm up exercises before workout,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'workout'
 driftwood day camp application,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'driftwood day camp'
 pierce day camp tuition,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,1,2,2.78,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'pierce day camp'
-fscamp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,Brand term in nonbranded campaign — add as negative
+fscamp,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,Brand term in nonbranded campaign - add as negative
 kids soccer ball sizes by age,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'ball size'
 how to measure tennis racket size,CM - pMax - Portland (MxConv), --,Performance Max,None,1,2,0.33,0.00,ADD NEGATIVE,Wrong intent signal: 'how to'
 ymca sleepaway camps,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'sleepaway'
@@ -38,7 +38,7 @@ long island university football camps,CM - pMax - Portland (MxConv), --,Performa
 what size ball for 10 year old,CM - pMax - Portland (MxConv), --,Performance Max,None,0,2,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'what size'
 good hitting drills for youth baseball,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'drills'
 luhi summer camp schedule,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match,None,0,1,0.00,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'luhi summer camp'
-fscamp,CM - Nonbranded - Geo Priorities (MxCx),Sports Camps,Phrase match (close variant),None,1,1,0.15,0.00,ADD NEGATIVE,Brand term in nonbranded campaign — add as negative
+fscamp,CM - Nonbranded - Geo Priorities (MxCx),Sports Camps,Phrase match (close variant),None,1,1,0.15,0.00,ADD NEGATIVE,Brand term in nonbranded campaign - add as negative
 how to play golf for beginners,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'how to'
 camps r us long island,CM - Nonbranded - Geo Priorities (MxCx),Summer Camps,Phrase match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,Competitor term in nonbranded campaign: 'camps r us'
 what size soccer ball for 8 year old,CM - pMax - Portland (MxConv), --,Performance Max,None,0,1,0.00,0.00,ADD NEGATIVE,Wrong intent signal: 'what size'

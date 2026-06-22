@@ -47,7 +47,7 @@ def analyze_term(term, campaign, already_excluded):
     term_lower = term.lower()
     camp_lower = campaign.lower()
 
-    # Already handled — skip
+    # Already handled - skip
     if already_excluded == "Excluded":
         return "ALREADY EXCLUDED", "Already added as negative"
 
@@ -65,12 +65,12 @@ def analyze_term(term, campaign, already_excluded):
         if matched_brand:
             return "OK", f"Brand term matched: '{matched_brand}'"
         if matched_near_brand:
-            return "REVIEW", f"Near-brand — has converted before, review: '{matched_near_brand}'"
+            return "REVIEW", f"Near-brand - has converted before, review: '{matched_near_brand}'"
         if matched_false_brand:
             return "ADD NEGATIVE", f"Looks like brand but is a different camp: '{matched_false_brand}'"
         if matched_competitor:
             return "ADD NEGATIVE", f"Competitor term in branded campaign: '{matched_competitor}'"
-        return "ADD NEGATIVE", "No brand signal — not relevant for branded campaign"
+        return "ADD NEGATIVE", "No brand signal - not relevant for branded campaign"
 
     # ── COMPETITORS campaign ──────────────────────────────────────────────────
     if "competitor" in camp_lower:
@@ -80,7 +80,7 @@ def analyze_term(term, campaign, already_excluded):
         if fuzzy_match or matched_competitor:
             hit = fuzzy_match or matched_competitor
             return "OK", f"Competitor matched: '{hit}'"
-        return "ADD NEGATIVE", "No competitor signal — not relevant for competitors campaign"
+        return "ADD NEGATIVE", "No competitor signal - not relevant for competitors campaign"
 
     # ── pMax Portland ─────────────────────────────────────────────────────────
     if "pmax" in camp_lower or "portland" in camp_lower:
@@ -90,7 +90,7 @@ def analyze_term(term, campaign, already_excluded):
         if matched_competitor:
             return "ADD NEGATIVE", f"Competitor term: '{matched_competitor}'"
         if matched_brand:
-            return "ADD NEGATIVE", "Brand term in pMax — should go to branded campaign"
+            return "ADD NEGATIVE", "Brand term in pMax - should go to branded campaign"
         if matched_bad_intent:
             return "ADD NEGATIVE", f"Wrong intent signal: '{matched_bad_intent}'"
         return "OK", "Appears relevant for Portland market"
@@ -98,7 +98,7 @@ def analyze_term(term, campaign, already_excluded):
     # ── NONBRANDED campaigns (Geo Priorities + Other Geos) ───────────────────
     if "nonbranded" in camp_lower or "non-branded" in camp_lower:
         if matched_brand:
-            return "ADD NEGATIVE", "Brand term in nonbranded campaign — add as negative"
+            return "ADD NEGATIVE", "Brand term in nonbranded campaign - add as negative"
         if matched_competitor:
             return "ADD NEGATIVE", f"Competitor term in nonbranded campaign: '{matched_competitor}'"
         if matched_bad_intent:
@@ -106,7 +106,7 @@ def analyze_term(term, campaign, already_excluded):
         return "OK", "Appears relevant"
 
     # ── Unknown campaign ──────────────────────────────────────────────────────
-    return "REVIEW", "Unknown campaign type — manual review needed"
+    return "REVIEW", "Unknown campaign type - manual review needed"
 
 
 def main():
@@ -159,7 +159,7 @@ def main():
         "Clicks", "Impr.", "Cost", "Conversions", "RECOMMENDATION", "REASON"
     ]
 
-    with open(args.out, "w", newline="", encoding="utf-8") as f:
+    with open(args.out, "w", newline="", encoding="utf-8-sig") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows_out)
