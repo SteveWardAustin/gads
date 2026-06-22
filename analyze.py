@@ -8,7 +8,9 @@ import sys
 import argparse
 from pathlib import Path
 import re
-from rules import BRAND_TERMS, COMPETITORS, COMPETITORS_EXACT, BAD_INTENT_SIGNALS, BAD_INTENT_EXCEPTIONS, PORTLAND_GOOD_GEO, PORTLAND_BAD_GEO
+from rules import (BRAND_TERMS, COMPETITORS, COMPETITORS_EXACT, BAD_INTENT_SIGNALS,
+                   BAD_INTENT_EXCEPTIONS, FALSE_BRAND_TERMS, NEAR_BRAND_REVIEW,
+                   PORTLAND_GOOD_GEO, PORTLAND_BAD_GEO)
 
 
 def contains_any(text, terms):
@@ -35,6 +37,8 @@ def analyze_term(term, campaign, already_excluded):
         return "ALREADY EXCLUDED", "Already added as negative"
 
     matched_brand = contains_any(term_lower, BRAND_TERMS)
+    matched_false_brand = contains_any(term_lower, FALSE_BRAND_TERMS)
+    matched_near_brand = contains_any(term_lower, NEAR_BRAND_REVIEW)
     matched_competitor = contains_any(term_lower, COMPETITORS) or contains_any_exact(term_lower, COMPETITORS_EXACT)
     raw_bad_intent = contains_any(term_lower, BAD_INTENT_SIGNALS)
     is_exception = contains_any(term_lower, BAD_INTENT_EXCEPTIONS)
@@ -45,6 +49,10 @@ def analyze_term(term, campaign, already_excluded):
     if "branded" in camp_lower and "nonbranded" not in camp_lower and "non-branded" not in camp_lower:
         if matched_brand:
             return "OK", f"Brand term matched: '{matched_brand}'"
+        if matched_near_brand:
+            return "REVIEW", f"Near-brand — has converted before, review: '{matched_near_brand}'"
+        if matched_false_brand:
+            return "ADD NEGATIVE", f"Looks like brand but is a different camp: '{matched_false_brand}'"
         if matched_competitor:
             return "ADD NEGATIVE", f"Competitor term in branded campaign: '{matched_competitor}'"
         return "ADD NEGATIVE", "No brand signal — not relevant for branded campaign"
@@ -65,7 +73,7 @@ def analyze_term(term, campaign, already_excluded):
         if matched_competitor:
             return "ADD NEGATIVE", f"Competitor term: '{matched_competitor}'"
         if matched_brand:
-            return "REVIEW", "Brand term in pMax — monitor"
+            return "ADD NEGATIVE", "Brand term in pMax — should go to branded campaign"
         if matched_bad_intent:
             return "ADD NEGATIVE", f"Wrong intent signal: '{matched_bad_intent}'"
         return "OK", "Appears relevant for Portland market"

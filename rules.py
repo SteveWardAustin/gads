@@ -5,7 +5,17 @@ Campaign rules and keyword lists for Future Stars search term analysis.
 BRAND_TERMS = [
     "future stars", "future star", "fscamps", "fscamp", "fs camps", "fs summer camp",
     "future stars camps", "future stars camp", "future stars summer camp",
-    "future stars summer camps", "futurestars",
+    "future stars summer camps", "futurestars", "fscamps.com",
+]
+
+# Near-brand terms that are NOT Future Stars — negate from branded campaign
+FALSE_BRAND_TERMS = [
+    "future all stars", "future soccer stars", "fugstars",
+]
+
+# Near-brand terms to keep as REVIEW (converted at least once)
+NEAR_BRAND_REVIEW = [
+    "rising stars summer camp", "rising stars camp",
 ]
 
 COMPETITORS = [
