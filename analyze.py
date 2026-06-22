@@ -15,6 +15,17 @@ from rules import (BRAND_TERMS, COMPETITORS, COMPETITORS_EXACT, COMPETITOR_NAMES
 # Words that don't define an ad group's theme (stripped when extracting theme tokens)
 AG_STOP_WORDS = {"camps", "camp", "sports", "sport", "summer", "day", "youth", "kids", "li"}
 
+# Slang synonyms mapped to canonical sport words used in ad group names
+AG_SYNONYMS = {
+    "lax": "lacrosse",
+    "hoops": "basketball",
+    "bball": "basketball",
+    "futbol": "soccer",
+    "footy": "soccer",
+    "gridiron": "football",
+    "hardball": "baseball",
+}
+
 
 def load_keywords(path):
     """
@@ -69,7 +80,12 @@ def ad_group_matches_term(term_lower, ag_tokens):
     """Return True if the search term contains at least one theme token from the ad group."""
     if not ag_tokens:
         return True  # no theme data, don't flag
-    return any(token in term_lower for token in ag_tokens)
+    # Expand term with synonyms so e.g. "lax" matches "lacrosse" ad group token
+    expanded = term_lower
+    for slang, canonical in AG_SYNONYMS.items():
+        if slang in term_lower.split():
+            expanded += " " + canonical
+    return any(token in expanded for token in ag_tokens)
 
 
 def neg_level(reason_type, camp_lower, ad_group, ag_themes):
