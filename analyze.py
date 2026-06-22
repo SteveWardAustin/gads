@@ -1,16 +1,40 @@
 """
 Future Stars Search Term Analyzer
-Usage: python analyze.py <search_terms.csv> [--out output.csv]
+Usage: python analyze.py <search_terms.csv> [--keywords keywords.csv] [--out output.csv]
 """
 
 import csv
-import sys
 import argparse
-from pathlib import Path
 import re
+from collections import defaultdict
 from rules import (BRAND_TERMS, COMPETITORS, COMPETITORS_EXACT, COMPETITOR_NAMES,
                    CAMP_QUALIFIERS, BAD_INTENT_SIGNALS, BAD_INTENT_EXCEPTIONS,
-                   FALSE_BRAND_TERMS, NEAR_BRAND_REVIEW, PORTLAND_GOOD_GEO, PORTLAND_BAD_GEO)
+                   FALSE_BRAND_TERMS, NEAR_BRAND_REVIEW, PORTLAND_GOOD_GEO, PORTLAND_BAD_GEO,
+                   GENERIC_CAMP_TERMS)
+
+# Words that don't define an ad group's theme (stripped when extracting theme tokens)
+AG_STOP_WORDS = {"camps", "camp", "sports", "sport", "summer", "day", "youth", "kids", "li"}
+
+
+def load_keywords(path):
+    """
+    Build a dict: (campaign, ad_group) -> set of theme tokens extracted from the ad group name.
+    We use the ad group NAME as the theme signal (e.g. "Basketball Camps" -> {"basketball"}).
+    """
+    ag_themes = defaultdict(set)
+    with open(path, encoding="utf-8-sig") as f:
+        f.readline()  # report title
+        f.readline()  # date range
+        reader = csv.DictReader(f)
+        for row in reader:
+            camp = row.get("Campaign", "").strip().strip('"')
+            ag = row.get("Ad group", "").strip().strip('"')
+            if not camp or camp.startswith("Total") or not ag or ag == "--":
+                continue
+            # Extract meaningful tokens from the ad group name
+            tokens = set(re.sub(r"[^a-z ]", "", ag.lower()).split()) - AG_STOP_WORDS
+            ag_themes[(camp, ag)].update(tokens)
+    return ag_themes
 
 
 def contains_any(text, terms):
@@ -24,10 +48,8 @@ def matches_competitor_with_qualifier(text):
     has_qualifier = any(q in t for q in CAMP_QUALIFIERS)
     for name in COMPETITOR_NAMES:
         if name in t:
-            # Specific enough phrases don't need a qualifier
             if len(name.split()) >= 3 or name in ("camps r us", "buckleycamp"):
                 return name
-            # Short names need a camp qualifier alongside them
             if has_qualifier:
                 return name
     return None
@@ -43,13 +65,33 @@ def contains_any_exact(text, terms):
     return None
 
 
-def analyze_term(term, campaign, already_excluded):
+def ad_group_matches_term(term_lower, ag_tokens):
+    """Return True if the search term contains at least one theme token from the ad group."""
+    if not ag_tokens:
+        return True  # no theme data, don't flag
+    return any(token in term_lower for token in ag_tokens)
+
+
+def neg_level(reason_type, camp_lower, ad_group, ag_themes):
+    """
+    Determine where to add the negative keyword.
+    ACCOUNT  - universally bad intent regardless of campaign
+    CAMPAIGN - wrong for this campaign but potentially ok elsewhere
+    AD GROUP - wrong for this ad group's theme but ok in the campaign
+    """
+    if reason_type == "bad_intent":
+        return "ACCOUNT"
+    if reason_type == "ad_group_mismatch":
+        return "AD GROUP"
+    return "CAMPAIGN"
+
+
+def analyze_term(term, campaign, ad_group, already_excluded, ag_themes):
     term_lower = term.lower()
     camp_lower = campaign.lower()
 
-    # Already handled - skip
     if already_excluded == "Excluded":
-        return "ALREADY EXCLUDED", "Already added as negative"
+        return "ALREADY EXCLUDED", "Already added as negative", ""
 
     matched_brand = contains_any(term_lower, BRAND_TERMS)
     matched_false_brand = contains_any(term_lower, FALSE_BRAND_TERMS)
@@ -60,86 +102,95 @@ def analyze_term(term, campaign, already_excluded):
     matched_bad_intent = raw_bad_intent if (raw_bad_intent and not is_exception) else None
 
     # ── BRANDED campaign ──────────────────────────────────────────────────────
-    # Use "branded" but NOT "nonbranded" to avoid routing nonbranded campaigns here
     if "branded" in camp_lower and "nonbranded" not in camp_lower and "non-branded" not in camp_lower:
         if matched_brand:
-            return "OK", f"Brand term matched: '{matched_brand}'"
+            return "OK", f"Brand term matched: '{matched_brand}'", ""
         if matched_near_brand:
-            return "REVIEW", f"Near-brand - has converted before, review: '{matched_near_brand}'"
+            return "REVIEW", f"Near-brand - has converted before, review: '{matched_near_brand}'", ""
         if matched_false_brand:
-            return "ADD NEGATIVE", f"Looks like brand but is a different camp: '{matched_false_brand}'"
+            return "ADD NEGATIVE", f"Looks like brand but is a different camp: '{matched_false_brand}'", "CAMPAIGN"
         if matched_competitor:
-            return "ADD NEGATIVE", f"Competitor term in branded campaign: '{matched_competitor}'"
-        return "ADD NEGATIVE", "No brand signal - not relevant for branded campaign"
+            return "ADD NEGATIVE", f"Competitor term in branded campaign: '{matched_competitor}'", "CAMPAIGN"
+        return "ADD NEGATIVE", "No brand signal - not relevant for branded campaign", "CAMPAIGN"
 
     # ── COMPETITORS campaign ──────────────────────────────────────────────────
     if "competitor" in camp_lower:
         if matched_brand:
-            return "ADD NEGATIVE", "Own brand showing in competitor campaign"
+            return "ADD NEGATIVE", "Own brand showing in competitor campaign", "CAMPAIGN"
         fuzzy_match = matches_competitor_with_qualifier(term_lower)
         if fuzzy_match or matched_competitor:
             hit = fuzzy_match or matched_competitor
-            return "OK", f"Competitor matched: '{hit}'"
-        return "ADD NEGATIVE", "No competitor signal - not relevant for competitors campaign"
+            return "OK", f"Competitor matched: '{hit}'", ""
+        return "ADD NEGATIVE", "No competitor signal - not relevant for competitors campaign", "CAMPAIGN"
 
     # ── pMax Portland ─────────────────────────────────────────────────────────
     if "pmax" in camp_lower or "portland" in camp_lower:
         bad_geo = contains_any(term_lower, PORTLAND_BAD_GEO)
         if bad_geo:
-            return "ADD NEGATIVE", f"NY/LI geography in Portland campaign: '{bad_geo}'"
+            return "ADD NEGATIVE", f"NY/LI geography in Portland campaign: '{bad_geo}'", "CAMPAIGN"
         if matched_competitor:
-            return "ADD NEGATIVE", f"Competitor term: '{matched_competitor}'"
+            return "ADD NEGATIVE", f"Competitor term: '{matched_competitor}'", "CAMPAIGN"
         if matched_brand:
-            return "ADD NEGATIVE", "Brand term in pMax - should go to branded campaign"
+            return "ADD NEGATIVE", "Brand term in pMax - should go to branded campaign", "CAMPAIGN"
         if matched_bad_intent:
-            return "ADD NEGATIVE", f"Wrong intent signal: '{matched_bad_intent}'"
-        return "OK", "Appears relevant for Portland market"
+            return "ADD NEGATIVE", f"Wrong intent signal: '{matched_bad_intent}'", "ACCOUNT"
+        return "OK", "Appears relevant for Portland market", ""
 
     # ── NONBRANDED campaigns (Geo Priorities + Other Geos) ───────────────────
     if "nonbranded" in camp_lower or "non-branded" in camp_lower:
         if matched_brand:
-            return "ADD NEGATIVE", "Brand term in nonbranded campaign - add as negative"
+            return "ADD NEGATIVE", "Brand term in nonbranded campaign - add as negative", "CAMPAIGN"
         if matched_competitor:
-            return "ADD NEGATIVE", f"Competitor term in nonbranded campaign: '{matched_competitor}'"
+            return "ADD NEGATIVE", f"Competitor term in nonbranded campaign: '{matched_competitor}'", "CAMPAIGN"
         if matched_bad_intent:
-            return "ADD NEGATIVE", f"Wrong intent signal: '{matched_bad_intent}'"
-        return "OK", "Appears relevant"
+            return "ADD NEGATIVE", f"Wrong intent signal: '{matched_bad_intent}'", "ACCOUNT"
+        # Check ad group theme match — skip if it's a generic camp term (fine anywhere)
+        is_generic = contains_any(term_lower, GENERIC_CAMP_TERMS)
+        ag_tokens = ag_themes.get((campaign, ad_group), set())
+        if ag_tokens and not is_generic and not ad_group_matches_term(term_lower, ag_tokens):
+            return "ADD NEGATIVE", f"Off-theme for ad group '{ad_group}'", "AD GROUP"
+        return "OK", "Appears relevant", ""
 
     # ── Unknown campaign ──────────────────────────────────────────────────────
-    return "REVIEW", "Unknown campaign type - manual review needed"
+    return "REVIEW", "Unknown campaign type - manual review needed", ""
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("input", help="Search terms CSV from Google Ads")
+    parser.add_argument("--keywords", default=None, help="Keywords CSV for ad group theme matching")
     parser.add_argument("--out", default="analysis_output.csv", help="Output CSV path")
     args = parser.parse_args()
+
+    ag_themes = {}
+    if args.keywords:
+        ag_themes = load_keywords(args.keywords)
+        print(f"Loaded {len(ag_themes)} ad groups from keyword file")
 
     rows_out = []
     counts = {"OK": 0, "ADD NEGATIVE": 0, "REVIEW": 0, "ALREADY EXCLUDED": 0}
 
     with open(args.input, encoding="utf-8-sig") as f:
-        # Skip Google Ads title rows (report name + date range)
-        f.readline()  # "Search terms report"
+        f.readline()  # report title
         f.readline()  # date range
         reader = csv.DictReader(f)
         for row in reader:
             term = row.get("Search term", "").strip()
             campaign = row.get("Campaign", "").strip()
+            ad_group = row.get("Ad group", "").strip()
 
-            # Skip summary/total rows
             if not term or term.startswith("Total") or campaign.startswith("Total"):
                 continue
 
-            recommendation, reason = analyze_term(
-                term, campaign, row.get("Added/Excluded", "")
+            recommendation, reason, level = analyze_term(
+                term, campaign, ad_group, row.get("Added/Excluded", ""), ag_themes
             )
             counts[recommendation] = counts.get(recommendation, 0) + 1
 
             rows_out.append({
                 "Search term": term,
                 "Campaign": campaign,
-                "Ad group": row.get("Ad group", ""),
+                "Ad group": ad_group,
                 "Match type": row.get("Match type", ""),
                 "Added/Excluded": row.get("Added/Excluded", ""),
                 "Clicks": row.get("Clicks", ""),
@@ -147,16 +198,16 @@ def main():
                 "Cost": row.get("Cost", ""),
                 "Conversions": row.get("Conversions", ""),
                 "RECOMMENDATION": recommendation,
+                "NEG LEVEL": level,
                 "REASON": reason,
             })
 
-    # Sort: ADD NEGATIVE first, then REVIEW, then OK
     order = {"ADD NEGATIVE": 0, "REVIEW": 1, "OK": 2, "ALREADY EXCLUDED": 3}
     rows_out.sort(key=lambda r: order.get(r["RECOMMENDATION"], 9))
 
     fieldnames = [
         "Search term", "Campaign", "Ad group", "Match type", "Added/Excluded",
-        "Clicks", "Impr.", "Cost", "Conversions", "RECOMMENDATION", "REASON"
+        "Clicks", "Impr.", "Cost", "Conversions", "RECOMMENDATION", "NEG LEVEL", "REASON"
     ]
 
     with open(args.out, "w", newline="", encoding="utf-8-sig") as f:
@@ -164,7 +215,7 @@ def main():
         writer.writeheader()
         writer.writerows(rows_out)
 
-    print(f"\nAnalysis complete → {args.out}")
+    print(f"\nAnalysis complete -> {args.out}")
     print(f"  Total terms analyzed : {sum(counts.values())}")
     for label in ["ADD NEGATIVE", "REVIEW", "OK", "ALREADY EXCLUDED"]:
         print(f"  {label:20} : {counts.get(label, 0)}")

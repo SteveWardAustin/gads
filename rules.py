@@ -62,6 +62,15 @@ COMPETITORS = [
     "woodbury summer camp", "woodbury day camp",
 ]
 
+# Generic camp terms that are OK in any ad group regardless of sport theme
+GENERIC_CAMP_TERMS = [
+    "summer camp", "day camp", "summer camps", "day camps",
+    "camp near me", "camps near me", "kids camp", "kids camps",
+    "camp for kids", "camps for kids", "youth camp", "youth camps",
+    "rec camp", "recreation camp", "sport camp", "sports camp",
+    "sports camps", "summer program", "summer programs",
+]
+
 # Known false positives — terms that contain bad-intent words but are actually OK
 BAD_INTENT_EXCEPTIONS = [
     "suny purchase", "purchase college", "purchase camp", "purchase day camp",
