@@ -23,6 +23,7 @@ COMPETITORS = [
     "intrepid travel",
     "g adventures",
     "nayara", "tabacon", "westin costa rica",
+    "club med",
 ]
 
 # DIY / research intent — person is planning themselves, not buying a package

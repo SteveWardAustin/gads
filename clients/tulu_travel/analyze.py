@@ -40,6 +40,7 @@ GENERIC_TRAVEL_TERMS = [
     "costa rica honeymoon", "honeymoon costa rica",
     "costa rica luxury", "luxury costa rica",
     "costa rica adventure", "adventure costa rica",
+    "best vacation packages", "best packages", "best costa rica packages",
 ]
 
 
