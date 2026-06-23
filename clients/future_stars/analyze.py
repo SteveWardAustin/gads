@@ -102,12 +102,16 @@ def neg_level(reason_type, camp_lower, ad_group, ag_themes):
     return "CAMPAIGN"
 
 
-def analyze_term(term, campaign, ad_group, already_excluded, ag_themes):
+def analyze_term(term, campaign, ad_group, already_excluded, ag_themes, converted_terms=None):
     term_lower = term.lower()
     camp_lower = campaign.lower()
 
     if already_excluded == "Excluded":
         return "ALREADY EXCLUDED", "Already added as negative", ""
+
+    # Converted terms always win - proved themselves regardless of any rule
+    if converted_terms and term.lower() in converted_terms:
+        return "OK", "Has converted - protected from negation", ""
 
     matched_brand = contains_any(term_lower, BRAND_TERMS)
     matched_false_brand = contains_any(term_lower, FALSE_BRAND_TERMS)
@@ -183,6 +187,28 @@ def main():
         ag_themes = load_keywords(args.keywords)
         print(f"Loaded {len(ag_themes)} ad groups from keyword file")
 
+    # First pass — collect all terms that have ever converted
+    converted_terms = set()
+    with open(args.input, encoding="utf-8-sig") as f:
+        f.readline()
+        f.readline()
+        for row in csv.DictReader(f):
+            term = row.get("Search term", "").strip()
+            camp = row.get("Campaign", "").strip()
+            if not term or term.lower().startswith("total") or camp.lower().startswith("total"):
+                continue
+            try:
+                convs = float(row.get("Conversions", "0") or 0)
+            except:
+                convs = 0
+            if convs > 0:
+                converted_terms.add(term.lower())
+
+    if converted_terms:
+        print(f"Converted terms (protected): {len(converted_terms)}")
+        for t in sorted(converted_terms):
+            print(f"  + {t}")
+
     rows_out = []
     counts = {"OK": 0, "ADD NEGATIVE": 0, "REVIEW": 0, "ALREADY EXCLUDED": 0}
 
@@ -199,7 +225,7 @@ def main():
                 continue
 
             recommendation, reason, level = analyze_term(
-                term, campaign, ad_group, row.get("Added/Excluded", ""), ag_themes
+                term, campaign, ad_group, row.get("Added/Excluded", ""), ag_themes, converted_terms
             )
             counts[recommendation] = counts.get(recommendation, 0) + 1
 
@@ -231,8 +257,23 @@ def main():
         writer.writeheader()
         writer.writerows(rows_out)
 
+    neg_rows = [r for r in rows_out if r["RECOMMENDATION"] == "ADD NEGATIVE"]
+    upload_path = args.out.replace(".csv", "_upload.csv")
+    with open(upload_path, "w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.DictWriter(f, fieldnames=["Campaign", "Ad group", "Keyword", "Type", "Keyword match type"])
+        writer.writeheader()
+        for r in neg_rows:
+            writer.writerow({
+                "Campaign": r["Campaign"],
+                "Ad group": r["Ad group"] if r["NEG LEVEL"] == "AD GROUP" else "",
+                "Keyword": r["Search term"],
+                "Type": "Negative" if r["NEG LEVEL"] == "AD GROUP" else "Campaign negative",
+                "Keyword match type": "Exact",
+            })
+
     print(f"\nAnalysis complete -> {args.out}")
-    print(f"  Total terms analyzed : {sum(counts.values())}")
+    print(f"Upload file    -> {upload_path}")
+    print(f"  Total analyzed   : {sum(counts.values())}")
     for label in ["ADD NEGATIVE", "REVIEW", "OK", "ALREADY EXCLUDED"]:
         print(f"  {label:20} : {counts.get(label, 0)}")
 
