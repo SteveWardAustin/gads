@@ -15,7 +15,9 @@ from rules import (BRAND_TERMS, COMPETITORS, DIY_RESEARCH_SIGNALS, BUDGET_SIGNAL
                    ACCOMMODATION_SIGNALS, EXCURSION_SIGNALS, FISHING_SIGNALS, SPANISH_SIGNALS)
 
 AG_STOP_WORDS = {"packages", "package", "travel", "costa", "rica", "trip", "trips",
-                 "vacation", "vacations", "tours", "tour", "&"}
+                 "vacation", "vacations", "tours", "tour", "to", "in", "the", "a",
+                 "and", "for", "of", "with", "&", "deals", "deal", "best", "all",
+                 "visit", "go", "book", "booking"}
 
 AG_SYNONYMS = {
     "romantic": "honeymoon",
@@ -58,17 +60,12 @@ def load_keywords(path):
         for row in reader:
             camp = row.get('Campaign', '').strip().strip('"')
             ag = row.get('Ad group', '').strip().strip('"')
-            if not camp or camp.startswith('Total') or not ag or ag == '--':
+            kw = row.get('Keyword', '').strip().strip('"').lower()
+            if not camp or camp.startswith('Total') or not ag or ag == '--' or not kw:
                 continue
-            ag_lower = ag.lower()
-            # Keep hyphenated terms intact then also split them
-            raw_tokens = re.sub(r'[^a-z\- ]', '', ag_lower).split()
-            tokens = set()
-            for t in raw_tokens:
-                tokens.add(t)
-                if '-' in t:
-                    tokens.update(t.split('-'))
-            tokens -= AG_STOP_WORDS
+            # Extract tokens from the actual keyword text, not the ad group name
+            kw_clean = re.sub(r'[^a-z ]', ' ', kw)
+            tokens = set(kw_clean.split()) - AG_STOP_WORDS
             ag_themes[(camp, ag)].update(tokens)
     return ag_themes
 

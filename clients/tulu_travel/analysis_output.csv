@@ -8,15 +8,12 @@ arenal rides costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close
 hostels in costa rica on the beach,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,CAMPAIGN,Accommodation-only search - not a package buyer: 'hostel'
 the westin costa rica,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,CAMPAIGN,Competitor term: 'westin costa rica'
 westin costa rica all inclusive,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,1,4,2.88,0.00,ADD NEGATIVE,CAMPAIGN,Competitor term: 'westin costa rica'
-traveling to costa rica with kids,Search - Resor,Family Packages,Exact match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Family Packages'
-planning a trip to costa rica with kids,Search - Resor,Family Packages,Exact match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Family Packages'
 travel agency to costa rica,Search - Resor,Trip planner,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Trip planner'
 the westin costa rica all inclusive,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,1,1,1.43,0.00,ADD NEGATIVE,CAMPAIGN,Competitor term: 'westin costa rica'
 entercostarica,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,CAMPAIGN,Competitor term: 'entercostarica'
 fora travel costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 costco travel packages to costa rica,Search - Resor,Vacation Packages,Phrase match,None,0,1,0.00,0.00,ADD NEGATIVE,CAMPAIGN,Competitor term: 'costco travel'
 monkey tours costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
-summer camps in costa rica for kids,Search - Resor,Family Packages,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Family Packages'
 my tan feet costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,5,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 westin playa conchal guanacaste costa rica,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'All-Inclusive & Custom'
 tours in costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
@@ -25,7 +22,6 @@ costa rica fishing trips all inclusive,Search - Resor,Travel Agent & Agency,Phra
 costco travel to costa rica,Search - Resor,Trip planner,Phrase match (close variant),None,1,1,1.76,0.00,ADD NEGATIVE,CAMPAIGN,Competitor term: 'costco travel'
 afa costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 costco travel packages costa rica,Search - Resor,Vacation Packages,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,CAMPAIGN,Competitor term: 'costco travel'
-costa rica with kids,Search - Resor,Family Packages,Exact match,Added,0,8,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Family Packages'
 costa rica monkey tours,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 the spring resort and spa costa rica,Search - Resor,Luxury Packages,Phrase match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Luxury Packages'
 costa rica september itinerary,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,CAMPAIGN,DIY research intent - low buying signal: 'itinerary'
@@ -34,7 +30,6 @@ solo travel in costa rica,Search - Resor,Travel Agent & Agency,Phrase match (clo
 costa rica trip itinerary 7 days,Search - Resor,Trip & Vacation,Phrase match (close variant),None,1,1,2.96,0.00,ADD NEGATIVE,CAMPAIGN,DIY research intent - low buying signal: 'itinerary'
 amor arenal resort,Search - Resor,Honeymoon & Romance,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Honeymoon & Romance'
 costa rican tours,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
-best place to go in costa rica with kids,Search - Resor,Family Packages,Exact match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Family Packages'
 all inclusive westin costa rica,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,CAMPAIGN,Competitor term: 'westin costa rica'
 tours from guanacaste costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 best way to do costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
@@ -44,10 +39,8 @@ westin costa rica,Search - Resor,All-Inclusive & Custom,Phrase match (close vari
 tours and transfers costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 hostels in costa rica on the beach,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,CAMPAIGN,Accommodation-only search - not a package buyer: 'hostel'
 costco travel to costa rica,Search - Resor,Travel Packages,Phrase match,None,0,2,0.00,0.00,ADD NEGATIVE,CAMPAIGN,Competitor term: 'costco travel'
-dmc in costa rica,Search - Resor,Travel Agent & Agency,Exact match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 triodeturismo,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 what to visit in costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
-trip to costa rica with kids,Search - Resor,Family Packages,Exact match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Family Packages'
 pacific trade winds tours,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 best way to see costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 club med costa rica,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,CAMPAIGN,Competitor term: 'club med'
@@ -57,7 +50,6 @@ all inclusive kid friendly costa rica,Search - Resor,Family Packages,Phrase matc
 arenal tours costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 7 day itinerary costa rica,Search - Resor,Trip & Vacation,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,CAMPAIGN,DIY research intent - low buying signal: 'itinerary'
 tpv tours costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
-costa rica dmc,Search - Resor,Travel Agent & Agency,Exact match,Added,0,2,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 inside tours cr,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 costa rica retirement tours,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 costa rica the westin reserva conchal package,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'All-Inclusive & Custom'
@@ -121,6 +113,7 @@ costa rica vacaciones 2026,Search - Resor,Travel Packages,Phrase match (close va
 vacaciones a costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,1,1,3.33,0.00,ADD NEGATIVE,CAMPAIGN,Spanish-language search - targets US English: 'vacaciones'
 vacation package in costa rica,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,1,1,4.78,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'All-Inclusive & Custom'
 costa rica the westin reserva conchal,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'All-Inclusive & Custom'
+all exclusive trips to costa rica,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'All-Inclusive & Custom'
 tours costa rica san jose,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 paradisus playa conchal,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'All-Inclusive & Custom'
 costa rica 3 days itinerary,Search - Resor,Travel Packages,Phrase match (close variant),None,2,1,9.72,0.00,ADD NEGATIVE,CAMPAIGN,DIY research intent - low buying signal: 'itinerary'
@@ -137,6 +130,7 @@ best tourist spots in costa rica,Search - Resor,Travel Packages,Phrase match (cl
 costa rica expeditions,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 national geographic costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 groupon costa rica deal,Search - Resor,Vacation Packages,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,CAMPAIGN,Budget/cheap intent - not Tulu market: 'deal'
+costa rica all exclusive,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'All-Inclusive & Custom'
 best place to stay in costa rica for beach and adventure,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 tropical tours shuttles costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 tourist costa rica,Search - Resor,Trip & Vacation,Exact match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,CAMPAIGN,DIY research intent - low buying signal: 'tourist'
@@ -144,7 +138,6 @@ guanacaste westin costa rica,Search - Resor,All-Inclusive & Custom,Phrase match 
 plan a trip to costa rica,Search - Resor,Trip planner,Exact match (close variant),None,1,1,2.71,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Trip planner'
 costco travel costa rica all inclusive,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,2,3,8.35,0.00,ADD NEGATIVE,CAMPAIGN,Competitor term: 'costco travel'
 packages to costa rica,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'All-Inclusive & Custom'
-costa rica for kids,Search - Resor,Family Packages,Exact match (close variant),None,0,5,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Family Packages'
 arenal volcano tours,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 ritz carlton costa rica,Search - Resor,Luxury Packages,Phrase match (close variant),None,0,4,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Luxury Packages'
 dreams la mareas costa rica,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'All-Inclusive & Custom'
@@ -163,7 +156,6 @@ trip packages to costa rica,Search - Resor,All-Inclusive & Custom,Exact match (c
 costa rica overwater bungalows,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 costa rica westin reserva conchal,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,2,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'All-Inclusive & Custom'
 paquetes costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,CAMPAIGN,Spanish-language search - targets US English: 'paquetes'
-costa rica resort kids,Search - Resor,Family Packages,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Family Packages'
 costa rica volcano tours,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 guti tours costa rica,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Travel Agent & Agency'
 the springs resort & spa at arenal la fortuna costa rica,Search - Resor,Luxury Packages,Phrase match (close variant),None,0,1,0.00,0.00,ADD NEGATIVE,AD GROUP,Off-theme for ad group 'Luxury Packages'
@@ -224,6 +216,7 @@ trips to costa rica 2027,Search - Resor,Vacation Packages,Phrase match (close va
 costa rica family vacations,Search - Resor,Family Packages,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica from nyc,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 best areas to visit in costa rica,Search - Resor,Trip & Vacation,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
+traveling to costa rica with kids,Search - Resor,Family Packages,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica all inclusive packages,Search - Resor,All-Inclusive & Custom,Exact match,Added,2,15,4.64,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica packages all inclusive,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 papagayo costa rica all inclusive,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
@@ -234,6 +227,7 @@ hilton guanacaste costa rica,Search - Resor,Travel Packages,Phrase match (close 
 kosher jaco costa rica,Search - Resor,Trip & Vacation,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica tours,Search - Resor,Travel Packages,Exact match (close variant),None,0,2,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 all inclusive resort costa rica,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,4,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
+planning a trip to costa rica with kids,Search - Resor,Family Packages,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 what should i do in costa rica,Search - Resor,Trip & Vacation,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica tour packages all inclusive,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,4,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 all inclusive costa rica,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,2,13,4.38,0.48,OK,,Appears relevant - luxury package buyer intent
@@ -254,6 +248,7 @@ tamarindo to sjo,Search - Resor,Travel Packages,Phrase match (close variant),Non
 all inclusive costa rica vacation packages,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,1,7,4.96,0.00,OK,,Appears relevant - luxury package buyer intent
 tour costa rica,Search - Resor,Travel Packages,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica round trip,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
+summer camps in costa rica for kids,Search - Resor,Family Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica vacations,Search - Resor,Vacation Packages,Exact match (close variant),None,1,6,2.06,0.00,OK,,Appears relevant - luxury package buyer intent
 all inclusive resort costa rica adults only,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 trip to costa rica price,Search - Resor,Trip & Vacation,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
@@ -294,6 +289,7 @@ costa rica winter,Search - Resor,Trip & Vacation,Phrase match (close variant),No
 syracuse to costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica all inclusive adults only,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,4,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica in october,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
+costa rica with kids,Search - Resor,Family Packages,Exact match,Added,0,8,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 santa teresa to la fortuna,Search - Resor,Travel Packages,Phrase match (close variant),None,0,2,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 rythmia costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,0,2,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 what's there to do in costa rica,Search - Resor,Trip & Vacation,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
@@ -318,6 +314,7 @@ best costa rica tours packages,Search - Resor,Travel Packages,Exact match (close
 que se puede hacer en costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,0,2,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 surf camps costa rica,Search - Resor,Trip & Vacation,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 round trip to costa rica,Search - Resor,Travel Packages,Phrase match,None,0,2,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
+best place to go in costa rica with kids,Search - Resor,Family Packages,Exact match (close variant),None,0,2,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica luxury tour packages,Search - Resor,Luxury Packages,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 margaritaville beach resort costa rica all inclusive,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 best adult all inclusive costa rica,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
@@ -350,6 +347,7 @@ costa rica honeymoon all inclusive,Search - Resor,Honeymoon & Romance,Exact matc
 best costa rica tours packages,Search - Resor,Travel Packages,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica in october,Search - Resor,Travel Packages,Phrase match (close variant),None,0,2,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 tours a costa rica,Search - Resor,Trip & Vacation,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
+dmc in costa rica,Search - Resor,Travel Agent & Agency,Exact match (close variant),None,0,2,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica family packages,Search - Resor,Family Packages,Exact match,Added,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 best areas to stay in costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica travel costco,Search - Resor,Travel Packages,Phrase match,None,1,1,2.23,0.00,OK,,Appears relevant - luxury package buyer intent
@@ -357,6 +355,7 @@ resort in costa rica all inclusive,Search - Resor,All-Inclusive & Custom,Exact m
 guias turisticos costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 all inclusive vacation costa rica,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica vacations all inclusive,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
+trip to costa rica with kids,Search - Resor,Family Packages,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica vacations,Search - Resor,Trip & Vacation,Exact match (close variant),Added,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 best costa rica tours packages,Search - Resor,Travel Agent & Agency,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica all inclusive vacation,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
@@ -395,6 +394,7 @@ jaco tamarindo,Search - Resor,Travel Packages,Phrase match (close variant),None,
 costa rica all inclusive family,Search - Resor,Family Packages,Phrase match (close variant),None,1,1,2.15,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica all inclusive,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,2,13,3.22,0.24,OK,,Appears relevant - luxury package buyer intent
 accommodations in costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
+costa rica dmc,Search - Resor,Travel Agent & Agency,Exact match,Added,0,2,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica tours,Search - Resor,Trip & Vacation,Exact match (close variant),Added,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 short term rentals in costa rica,Search - Resor,Trip & Vacation,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 zoos in costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
@@ -615,7 +615,6 @@ round trip to costa rica,Search - Resor,Travel Packages,Phrase match (close vari
 costa rica honeymoon all inclusive bungalow,Search - Resor,Honeymoon & Romance,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 the springs resort and spa costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 best all inclusive resort in guanacaste costa rica,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
-all exclusive trips to costa rica,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 inclusive costa rica vacation packages,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 all inclusive costa rica caribbean side,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,1,2,2.97,1.00,OK,,Appears relevant - luxury package buyer intent
 vacation to costa rica,Search - Resor,Trip & Vacation,Exact match,Added,0,3,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
@@ -677,7 +676,6 @@ places to travel in costa rica,Search - Resor,Travel Packages,Exact match (close
 7 day costa rica tour,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 tamarindo costa rica villa rentals,Search - Resor,Trip & Vacation,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 all inclusive packages costa rica,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,2,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
-costa rica all exclusive,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,2,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 hilton guanacaste costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 all inclusive vacation packages in costa rica,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 best costa rica vacation packages,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,1,2,8.16,0.00,OK,,Appears relevant - luxury package buyer intent
@@ -693,6 +691,7 @@ arenal to monteverde costa rica,Search - Resor,Travel Packages,Phrase match (clo
 busses in costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 couples trip to costa rica,Search - Resor,Honeymoon & Romance,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica tour company,Search - Resor,Travel Agent & Agency,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
+costa rica for kids,Search - Resor,Family Packages,Exact match (close variant),None,0,5,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 vacations to costa rica all inclusive,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 shuttles in costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica visa,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
@@ -747,6 +746,7 @@ san jose costa rica top attractions,Search - Resor,Travel Packages,Phrase match 
 best parts of costa rica to visit,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 san jose to drake bay costa rica,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 all inclusive costa rica vacation packages,Search - Resor,All-Inclusive & Custom,Exact match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
+costa rica resort kids,Search - Resor,Family Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 costa rica best place to stay,Search - Resor,Travel Packages,Phrase match (close variant),None,0,1,0.00,0.00,OK,,Appears relevant - luxury package buyer intent
 all inclusive trips to costa rica 2026,Search - Resor,All-Inclusive & Custom,Phrase match (close variant),None,1,2,5.03,0.49,OK,,Appears relevant - luxury package buyer intent
 costa rica weddings all inclusive packages,Search - Resor,All-Inclusive & Custom,Phrase match,None,1,1,1.65,0.00,OK,,Appears relevant - luxury package buyer intent
