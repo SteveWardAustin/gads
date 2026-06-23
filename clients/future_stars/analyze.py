@@ -259,14 +259,21 @@ def main():
 
     neg_rows = [r for r in rows_out if r["RECOMMENDATION"] == "ADD NEGATIVE"]
     upload_path = args.out.replace(".csv", "_upload.csv")
+    seen_upload = set()
     with open(upload_path, "w", newline="", encoding="utf-8-sig") as f:
         writer = csv.DictWriter(f, fieldnames=["Campaign", "Ad group", "Keyword", "Type", "Keyword match type"])
         writer.writeheader()
         for r in neg_rows:
+            kw = r["Search term"].encode("ascii", "ignore").decode("ascii").strip()
+            ag = r["Ad group"] if r["NEG LEVEL"] == "AD GROUP" else ""
+            dedup_key = (r["Campaign"], ag, kw.lower())
+            if not kw or dedup_key in seen_upload:
+                continue
+            seen_upload.add(dedup_key)
             writer.writerow({
                 "Campaign": r["Campaign"],
-                "Ad group": r["Ad group"] if r["NEG LEVEL"] == "AD GROUP" else "",
-                "Keyword": r["Search term"],
+                "Ad group": ag,
+                "Keyword": kw,
                 "Type": "Negative" if r["NEG LEVEL"] == "AD GROUP" else "Campaign negative",
                 "Keyword match type": "Exact",
             })
