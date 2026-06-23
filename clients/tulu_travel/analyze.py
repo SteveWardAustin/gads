@@ -1,0 +1,213 @@
+"""
+Tulu Travel Search Term Analyzer
+Usage: python analyze.py <search_terms.csv> [--keywords keywords.csv] [--out output.csv]
+"""
+
+import csv
+import argparse
+import re
+import sys
+import os
+from collections import defaultdict
+
+sys.path.insert(0, os.path.dirname(__file__))
+from rules import (BRAND_TERMS, COMPETITORS, DIY_RESEARCH_SIGNALS, BUDGET_SIGNALS,
+                   ACCOMMODATION_SIGNALS, EXCURSION_SIGNALS, FISHING_SIGNALS, SPANISH_SIGNALS)
+
+AG_STOP_WORDS = {"packages", "package", "travel", "costa", "rica", "trip", "trips",
+                 "vacation", "vacations", "tours", "tour"}
+
+AG_SYNONYMS = {
+    "romantic": "honeymoon",
+    "couples": "honeymoon",
+    "luxe": "luxury",
+    "high end": "luxury",
+    "high-end": "luxury",
+    "all inclusive": "all-inclusive",
+    "custom": "custom",
+}
+
+
+def contains_any(text, terms):
+    t = text.lower()
+    return next((term for term in terms if term in t), None)
+
+
+def contains_any_exact(text, terms):
+    t = text.lower()
+    for term in terms:
+        pattern = r'\b' + re.escape(term) + r'\b'
+        if re.search(pattern, t):
+            return term
+    return None
+
+
+def load_keywords(path):
+    ag_themes = defaultdict(set)
+    with open(path, encoding='utf-8-sig') as f:
+        f.readline()
+        f.readline()
+        reader = csv.DictReader(f)
+        for row in reader:
+            camp = row.get('Campaign', '').strip().strip('"')
+            ag = row.get('Ad group', '').strip().strip('"')
+            if not camp or camp.startswith('Total') or not ag or ag == '--':
+                continue
+            tokens = set(re.sub(r'[^a-z& ]', '', ag.lower()).split()) - AG_STOP_WORDS
+            ag_themes[(camp, ag)].update(tokens)
+    return ag_themes
+
+
+def ad_group_matches_term(term_lower, ag_tokens):
+    if not ag_tokens:
+        return True
+    expanded = term_lower
+    for slang, canonical in AG_SYNONYMS.items():
+        if slang in term_lower:
+            expanded += ' ' + canonical
+    return any(token in expanded for token in ag_tokens)
+
+
+# Generic travel terms OK in any ad group
+GENERIC_TRAVEL_TERMS = [
+    "costa rica vacation", "costa rica trip", "costa rica travel",
+    "costa rica package", "costa rica packages", "costa rica holiday",
+    "visit costa rica", "go to costa rica", "travel to costa rica",
+]
+
+
+def analyze_term(term, campaign, ad_group, already_excluded, ag_themes):
+    term_lower = term.lower()
+    camp_lower = campaign.lower()
+
+    if already_excluded == 'Excluded':
+        return 'ALREADY EXCLUDED', 'Already added as negative', ''
+
+    matched_brand = contains_any(term_lower, BRAND_TERMS)
+    matched_competitor = contains_any(term_lower, COMPETITORS)
+    matched_diy = contains_any(term_lower, DIY_RESEARCH_SIGNALS)
+    matched_budget = contains_any(term_lower, BUDGET_SIGNALS)
+    matched_accommodation = contains_any(term_lower, ACCOMMODATION_SIGNALS)
+    matched_excursion = contains_any(term_lower, EXCURSION_SIGNALS)
+    matched_fishing = contains_any(term_lower, FISHING_SIGNALS)
+    matched_spanish = contains_any(term_lower, SPANISH_SIGNALS)
+
+    # ── BRAND campaign ────────────────────────────────────────────────────────
+    if 'brand' in camp_lower:
+        if matched_brand:
+            return 'OK', f"Brand term: '{matched_brand}'", ''
+        if matched_competitor:
+            return 'ADD NEGATIVE', f"Competitor in brand campaign: '{matched_competitor}'", 'CAMPAIGN'
+        return 'REVIEW', 'Non-brand term in brand campaign - check', ''
+
+    # ── MAIN search campaign (Search - Resor) ─────────────────────────────────
+    if matched_brand:
+        return 'ADD NEGATIVE', 'Brand term in non-brand campaign', 'CAMPAIGN'
+    if matched_competitor:
+        return 'ADD NEGATIVE', f"Competitor term: '{matched_competitor}'", 'CAMPAIGN'
+    if matched_spanish:
+        return 'ADD NEGATIVE', f"Spanish-language search - targets US English: '{matched_spanish}'", 'CAMPAIGN'
+    if matched_budget:
+        return 'ADD NEGATIVE', f"Budget/cheap intent - not Tulu market: '{matched_budget}'", 'CAMPAIGN'
+    if matched_diy:
+        return 'ADD NEGATIVE', f"DIY research intent - low buying signal: '{matched_diy}'", 'CAMPAIGN'
+    if matched_accommodation:
+        return 'ADD NEGATIVE', f"Accommodation-only search - not a package buyer: '{matched_accommodation}'", 'CAMPAIGN'
+    if matched_excursion:
+        return 'ADD NEGATIVE', f"Short excursion intent - not multi-day package: '{matched_excursion}'", 'CAMPAIGN'
+    if matched_fishing:
+        return 'ADD NEGATIVE', f"Fishing-specific - separate niche: '{matched_fishing}'", 'CAMPAIGN'
+
+    # Ad group theme check
+    is_generic = contains_any(term_lower, GENERIC_TRAVEL_TERMS)
+    ag_tokens = ag_themes.get((campaign, ad_group), set())
+    if ag_tokens and not is_generic and not ad_group_matches_term(term_lower, ag_tokens):
+        return 'ADD NEGATIVE', f"Off-theme for ad group '{ad_group}'", 'AD GROUP'
+
+    return 'OK', 'Appears relevant - luxury package buyer intent', ''
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('input', help='Search terms CSV from Google Ads')
+    parser.add_argument('--keywords', default=None, help='Keywords CSV for ad group theme matching')
+    parser.add_argument('--out', default='analysis_output.csv', help='Output CSV path')
+    args = parser.parse_args()
+
+    ag_themes = {}
+    if args.keywords:
+        ag_themes = load_keywords(args.keywords)
+        print(f"Loaded {len(ag_themes)} ad groups from keyword file")
+
+    rows_out = []
+    counts = {'OK': 0, 'ADD NEGATIVE': 0, 'REVIEW': 0, 'ALREADY EXCLUDED': 0}
+
+    with open(args.input, encoding='utf-8-sig') as f:
+        f.readline()
+        f.readline()
+        reader = csv.DictReader(f)
+        for row in reader:
+            term = row.get('Search term', '').strip()
+            campaign = row.get('Campaign', '').strip()
+            ad_group = row.get('Ad group', '').strip()
+
+            if not term or term.startswith('Total') or campaign.startswith('Total'):
+                continue
+
+            recommendation, reason, level = analyze_term(
+                term, campaign, ad_group, row.get('Added/Excluded', ''), ag_themes
+            )
+            counts[recommendation] = counts.get(recommendation, 0) + 1
+
+            rows_out.append({
+                'Search term': term,
+                'Campaign': campaign,
+                'Ad group': ad_group,
+                'Match type': row.get('Match type', ''),
+                'Added/Excluded': row.get('Added/Excluded', ''),
+                'Clicks': row.get('Clicks', ''),
+                'Impr.': row.get('Impr.', ''),
+                'Cost': row.get('Cost', ''),
+                'Conversions': row.get('Conversions', ''),
+                'RECOMMENDATION': recommendation,
+                'NEG LEVEL': level,
+                'REASON': reason,
+            })
+
+    order = {'ADD NEGATIVE': 0, 'REVIEW': 1, 'OK': 2, 'ALREADY EXCLUDED': 3}
+    rows_out.sort(key=lambda r: order.get(r['RECOMMENDATION'], 9))
+
+    fieldnames = [
+        'Search term', 'Campaign', 'Ad group', 'Match type', 'Added/Excluded',
+        'Clicks', 'Impr.', 'Cost', 'Conversions', 'RECOMMENDATION', 'NEG LEVEL', 'REASON'
+    ]
+
+    with open(args.out, 'w', newline='', encoding='utf-8-sig') as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows_out)
+
+    neg_rows = [r for r in rows_out if r['RECOMMENDATION'] == 'ADD NEGATIVE']
+    upload_fields = ['Campaign', 'Ad group', 'Keyword', 'Type', 'Keyword match type']
+    upload_path = args.out.replace('.csv', '_upload.csv')
+    with open(upload_path, 'w', newline='', encoding='utf-8-sig') as f:
+        writer = csv.DictWriter(f, fieldnames=upload_fields)
+        writer.writeheader()
+        for r in neg_rows:
+            writer.writerow({
+                'Campaign': r['Campaign'],
+                'Ad group': r['Ad group'] if r['NEG LEVEL'] == 'AD GROUP' else '',
+                'Keyword': r['Search term'],
+                'Type': 'Negative' if r['NEG LEVEL'] == 'AD GROUP' else 'Campaign negative',
+                'Keyword match type': 'Exact',
+            })
+
+    print(f"\nAnalysis complete -> {args.out}")
+    print(f"Upload file    -> {upload_path}")
+    print(f"  Total analyzed   : {sum(counts.values())}")
+    for label in ['ADD NEGATIVE', 'REVIEW', 'OK', 'ALREADY EXCLUDED']:
+        print(f"  {label:20} : {counts.get(label, 0)}")
+
+
+if __name__ == '__main__':
+    main()
