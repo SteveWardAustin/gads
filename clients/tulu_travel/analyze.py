@@ -12,7 +12,8 @@ from collections import defaultdict
 
 sys.path.insert(0, os.path.dirname(__file__))
 from rules import (BRAND_TERMS, COMPETITORS, DIY_RESEARCH_SIGNALS, BUDGET_SIGNALS,
-                   ACCOMMODATION_SIGNALS, EXCURSION_SIGNALS, FISHING_SIGNALS, SPANISH_SIGNALS)
+                   ACCOMMODATION_SIGNALS, EXCURSION_SIGNALS, FISHING_SIGNALS, SPANISH_SIGNALS,
+                   TOUR_REVIEW_TERMS)
 
 AG_STOP_WORDS = {"packages", "package", "travel", "costa", "rica", "trip", "trips",
                  "vacation", "vacations", "tours", "tour", "to", "in", "the", "a",
@@ -122,6 +123,10 @@ def analyze_term(term, campaign, ad_group, already_excluded, ag_themes):
         return 'ADD NEGATIVE', f"Short excursion intent - not multi-day package: '{matched_excursion}'", 'CAMPAIGN'
     if matched_fishing:
         return 'ADD NEGATIVE', f"Fishing-specific - separate niche: '{matched_fishing}'", 'CAMPAIGN'
+
+    # Generic tour terms - could be buyers, keep for manual review
+    if contains_any(term_lower, TOUR_REVIEW_TERMS):
+        return 'REVIEW', 'Generic tour search - could be buyer, review manually', ''
 
     # Ad group theme check
     is_generic = contains_any(term_lower, GENERIC_TRAVEL_TERMS)

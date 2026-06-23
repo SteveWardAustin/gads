@@ -62,6 +62,13 @@ EXCURSION_SIGNALS = [
     "one day", "1 day", "single day",
 ]
 
+# Generic tour terms that could be buyers - keep as REVIEW
+TOUR_REVIEW_TERMS = [
+    "costa rica private tours",
+    "costa rica expeditions",
+    "tours in costa rica",
+]
+
 # Fishing-specific (separate niche, not main luxury package offering)
 FISHING_SIGNALS = [
     "fishing", "sport fishing", "deep sea fishing", "fly fishing",
