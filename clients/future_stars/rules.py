@@ -1,5 +1,24 @@
 """
 Campaign rules and keyword lists for Future Stars search term analysis.
+Client: Future Stars Summer Camps (fscamps.com) — youth sports day camps, Long Island NY + Portland ME.
+
+Key judgment calls:
+- BAD_INTENT_EXCEPTIONS: "purchase" excluded from buy/shop signals because "SUNY Purchase" is a
+  college that legitimately runs camps. Adding "purchase" as a signal caused false positives.
+- COMPETITORS_EXACT ["camp w"]: Uses word-boundary regex matching instead of substring, because
+  "camp w" substring-matched "westchester" and similar words — moved out of COMPETITORS list.
+- COMPETITOR_NAMES: Short/ambiguous names (buckley, hofstra, oasis, etc.) require a CAMP_QUALIFIER
+  word alongside them. "Hofstra" alone could be the university; "hofstra camp" is a competitor.
+  Long phrases (3+ words, or known full names like "camps r us") match without a qualifier.
+- FALSE_BRAND_TERMS: Terms that look like Future Stars branding but aren't (e.g. "future all stars",
+  "future soccer stars") — negate from branded campaign.
+- NEAR_BRAND_REVIEW: "rising stars" variants have converted before, so keep as REVIEW not negative.
+- PORTLAND_BAD_GEO: pMax Portland campaign should stay in ME. LI/NY geography terms are negated
+  at campaign level since those searches should go to the LI-targeted nonbranded campaigns.
+- AG_STOP_WORDS: Strip noise words from keyword tokens so ad group theme matching isn't diluted
+  by words like "camp", "summer", "kids" that appear in every ad group.
+- AG_SYNONYMS: Sport slang mapped to canonical names so "lax camp" matches Lacrosse Camps ad group.
+- Converted terms are always protected from negation regardless of any rule.
 """
 
 BRAND_TERMS = [

@@ -1,6 +1,19 @@
 """
 Campaign rules for Tulu Travel — Costa Rica luxury travel packages.
 Target: US buyers seeking high-end, guided, multi-day Costa Rica trips.
+
+Key judgment calls:
+- BUDGET_SIGNALS: Tulu sells premium packages ($5k+). Any cheap/discount intent is wrong market.
+- EXCURSION_SIGNALS: Day trips and half-day tours are not Tulu's product. Multi-day packages only.
+- ACCOMMODATION_SIGNALS: Someone searching hotels/airbnb/hostels is self-planning, not buying a package.
+- SPANISH_SIGNALS: Account targets US English speakers. Spanish searches are a different audience.
+- FISHING_SIGNALS: Fishing is a separate niche with its own operators. Not Tulu's offering.
+- TOUR_REVIEW_TERMS: "costa rica private tours", "costa rica expeditions", "tours in costa rica" —
+  generic enough that they could be package buyers. Keep as REVIEW rather than negate.
+- Converted terms are always protected from negation regardless of any rule — they proved themselves.
+- Ad group theme matching uses keyword TEXT tokens (not ad group name) to determine theme,
+  so "Travel Agent & Agency" ad group themes come from the actual keywords in that group.
+- GENERIC_TRAVEL_TERMS get a free pass on ad group theme matching — broad terms are fine anywhere.
 """
 
 BRAND_TERMS = [
